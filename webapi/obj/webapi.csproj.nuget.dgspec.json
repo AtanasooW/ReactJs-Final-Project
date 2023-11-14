@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\FrontEndProject\\webapi\\webapi.csproj": {}
+    "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\FrontEndProject\\webapi\\webapi.csproj": {
+    "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\FrontEndProject\\webapi\\webapi.csproj",
+        "projectUniqueName": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\FrontEndProject\\webapi\\webapi.csproj",
-        "packagesPath": "C:\\Users\\Doroti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\FrontEndProject\\webapi\\obj\\",
+        "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj",
+        "packagesPath": "C:\\Users\\AtanasooW\\.nuget\\packages\\",
+        "outputPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Doroti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AtanasooW\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,13 +22,26 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj"
+              },
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj"
+              },
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj"
+              },
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClubDTO\\ASNClub.DTOs.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClubDTO\\ASNClub.DTOs.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -41,13 +54,43 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.18, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[7.0.7, )"
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.15, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.9, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -69,7 +112,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

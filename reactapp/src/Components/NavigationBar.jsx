@@ -9,7 +9,7 @@ export default function NavigationBar(){
             <div className={styles.logoContainer}>
                 <Link to="/">
                 <img src="ASNLogo.jpg" alt="logo" />
-                <h2>ASN<span>Club</span></h2>
+                <h2>ASN<span className={styles.redSpan}>Club</span></h2>
                 </Link>
             </div>
             <div className={styles.navsContainer}>
@@ -23,15 +23,15 @@ export default function NavigationBar(){
             <div className={styles.userContainer}>
                 <div>
                     <Link to="/profile">
-                        <FontAwesomeIcon icon={faUser} size="xl"/>
+                        <FontAwesomeIcon icon={faUser} size="2xl"/>
                     </Link>
                 </div>
                 <div className={styles.shoppingCartContainer}>
                 <Link to="/shoppingCart">
                     <div>
-                        <FontAwesomeIcon icon={faCartShopping} size="xl" />
+                        <FontAwesomeIcon icon={faCartShopping} size="2xl" />
                     </div>
-                    <h5>0.00$</h5>
+                    <h4>0.00$</h4>
                 </Link>
                 </div>
             </div>

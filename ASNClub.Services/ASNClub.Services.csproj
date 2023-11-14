@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ASNClub.Data.Models\ASNClub.Data.Models.csproj" />
+    <ProjectReference Include="..\ASNClub.Data\ASNClub.Data.csproj" />
+    <ProjectReference Include="..\ASNClubDTO\ASNClub.DTOs.csproj" />
+  </ItemGroup>
+
+</Project>

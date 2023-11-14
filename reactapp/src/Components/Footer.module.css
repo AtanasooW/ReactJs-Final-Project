@@ -1,0 +1,39 @@
+a{
+    color: #e8bd99;
+    text-decoration: none;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+svg{
+    fill: #e8bd99;
+}
+li{
+    display: block;
+    text-align: start;
+    line-height: 1.8;
+}
+.footerInfo{
+    padding-top: 1em;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    flex-direction: column;
+    width:20%;
+}
+.line{
+    text-align: center;
+    font-size: 12px; 
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    padding: 1em 4em 0 1.5em;
+    background-color: #0a111b;
+    color: #e8bd99;
+    flex-direction: column;
+    align-self: flex-end;
+}

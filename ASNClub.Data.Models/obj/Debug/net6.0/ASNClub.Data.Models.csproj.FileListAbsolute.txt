@@ -1,0 +1,45 @@
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Data.Models.deps.json
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Data.Models.dll
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Data.Models.pdb
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.csproj.AssemblyReference.cache
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.AssemblyInfoInputs.cache
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.AssemblyInfo.cs
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.csproj.CoreCompileInputs.cache
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.dll
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\obj\Debug\net6.0\refint\ASNClub.Data.Models.dll
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.pdb
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\obj\Debug\net6.0\ref\ASNClub.Data.Models.dll
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Common.dll
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Common.pdb
+C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.csproj.CopyComplete
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Data.Models.deps.json
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Data.Models.dll
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Data.Models.pdb
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Common.dll
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Common.pdb
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.csproj.AssemblyReference.cache
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.AssemblyInfoInputs.cache
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.AssemblyInfo.cs
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.csproj.CoreCompileInputs.cache
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.csproj.CopyComplete
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.dll
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\refint\ASNClub.Data.Models.dll
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.pdb
+C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ref\ASNClub.Data.Models.dll
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Data.Models.deps.json
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Data.Models.dll
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Data.Models.pdb
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Common.dll
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\bin\Debug\net6.0\ASNClub.Common.pdb
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.csproj.AssemblyReference.cache
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.GeneratedMSBuildEditorConfig.editorconfig
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.AssemblyInfoInputs.cache
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.AssemblyInfo.cs
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.csproj.CoreCompileInputs.cache
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.csproj.CopyComplete
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.dll
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\refint\ASNClub.Data.Models.dll
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ASNClub.Data.Models.pdb
+D:\ASN\Asn-Project\ASN-Project\ASNClub.Data.Models\obj\Debug\net6.0\ref\ASNClub.Data.Models.dll

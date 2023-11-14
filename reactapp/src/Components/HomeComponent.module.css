@@ -1,24 +1,101 @@
 .container{
+    margin: 2em;
     position: relative;
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5em;
 }
-.background{
-    background-image: url('https://localhost:3000/images/BackgroundImgMK3.png');
-    padding: 42vh;
-    width: 31%;
-    background-repeat: no-repeat;
+.imageContainer{
+    position: relative;
+}
+.backgroundImg{
+    filter: brightness(65%);
+}
+.onTopText{
+    max-width: 30%;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: white;
+}
+.onTopText h1{
+    font-size: 2.5em;
+    margin-bottom: 0.05em;
+}
+.redSpan{
+    font-size: 0.80em;
+    color: #cf2c44;
+}
+.onTopText p{
+    margin: 2em 0;
+    font-size: 0.9em;
+}
+.onTopText button{
+    margin: 0;
+}
+.lowPricesContainer{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.lowPricesContainer div{
+    position: relative;
+}
+.lowPricesContainer div div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.lowPricesContainer div div h2{
+    margin: 0.5em 0;
 }
 
+.redButton{
+    margin: 0 1.5em;
+    padding: 1em 2em;
+    background-color: #cf2c44;
+    border: none;
+    border-radius: 5px;
+}
+
+.lowPricesContainer div img{
+    max-width: 100%;
+    
+}
+.dark{
+    filter: brightness(60%);
+}
+.categories {
+ align-self: flex-start;
+}
+.categories, .categories ul{
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+}
 .categories div{
+    text-align: center;
     padding: 1.5em 1.5em;
+    background-color: #e8bd99;
     border: lightgray 3px solid;
 }
+
 .categories ul li{
     display: block;
+    text-align: center;
     padding: 1.5em 1.5em;
-    border-right: lightgray 3px solid;
-    border-left: lightgray 3px solid;
-    border-bottom: lightgray 3px solid;
+    border: lightgray 3px solid
+}
+.categories ul li a{
+    font-weight: 500;
+    text-decoration: none;
+}
+.categories ul li a:hover{
+    text-decoration: underline;
+    color: #Da957E;
 }

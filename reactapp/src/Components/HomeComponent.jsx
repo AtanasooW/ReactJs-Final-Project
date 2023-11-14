@@ -3,15 +3,32 @@ import { Link } from "react-router-dom";
 export default function HomeComponent(){
     return(
         <div className={styles.container}>
-            <div className={styles.imgContainer}>
-
-                <div className={styles.background}>
-                        <div>
-                            <h1>ASNCLUb</h1>
-                        </div>
+            <div className={styles.imageContainer}>
+                <img className={styles.backgroundImg} src="./images/BackgroundImgMK3.png" alt="" />
+                <div className={styles.onTopText}>
+                    <h1>ASN<span className={styles.redSpan}>Club</span></h1>
+                    <h3>Best quality in Bul<span style={{color: "lightgreen"}}>ga</span><span style={{color: "#cf2c44"}}>ria</span></h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate ab eius fuga repellendus inventore alias similique minima sint nisi commodi minus totam rerum distinctio, eum iste, vitae aliquid tempora laborum.</p>
+                    <button className={styles.redButton}>Shop Now</button>
                 </div>
             </div>
-            <aside className={styles.categories}>
+            <div className={styles.lowPricesContainer}>
+                <div>
+                    <img className={styles.dark} src="./images/Cz75.png" alt="" />
+                    <div>
+                        <h2>Special Offers</h2>
+                        <button className={styles.redButton}>Shop Now</button>
+                    </div>
+                </div>
+                <div>
+                    <img className={styles.dark} src="./images/WaltherPPK.png" alt="" />
+                    <div>
+                        <h2>Special Offers</h2>
+                        <button className={styles.redButton}>Shop Now</button>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.categories}>
                 <div>Categories</div>
                 <ul>
                     <li><Link>Grips</Link></li>
@@ -19,7 +36,7 @@ export default function HomeComponent(){
                     <li><Link>Kits</Link></li>
                     <li><Link>Parts</Link></li>
                 </ul>
-            </aside>
+            </div> 
         </div>
     );
 }
