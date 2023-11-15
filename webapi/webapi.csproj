@@ -24,8 +24,8 @@
   <ItemGroup>
     <ProjectReference Include="..\ASNClub.Data.Models\ASNClub.Data.Models.csproj" />
     <ProjectReference Include="..\ASNClub.Data\ASNClub.Data.csproj" />
+    <ProjectReference Include="..\ASNClub.DTOs\ASNClub.DTOs.csproj" />
     <ProjectReference Include="..\ASNClub.Services\ASNClub.Services.csproj" />
-    <ProjectReference Include="..\ASNClubDTO\ASNClub.DTOs.csproj" />
   </ItemGroup>
 
   <ItemGroup>

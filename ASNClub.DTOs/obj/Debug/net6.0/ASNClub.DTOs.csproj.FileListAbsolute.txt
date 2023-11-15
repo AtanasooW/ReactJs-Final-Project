@@ -1,0 +1,15 @@
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\obj\Debug\net6.0\ASNClub.DTOs.csproj.AssemblyReference.cache
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\obj\Debug\net6.0\ASNClub.DTOs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\obj\Debug\net6.0\ASNClub.DTOs.AssemblyInfoInputs.cache
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\obj\Debug\net6.0\ASNClub.DTOs.AssemblyInfo.cs
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\obj\Debug\net6.0\ASNClub.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\bin\Debug\net6.0\ASNClub.DTOs.deps.json
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\bin\Debug\net6.0\ASNClub.DTOs.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\bin\Debug\net6.0\ASNClub.DTOs.pdb
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\bin\Debug\net6.0\ASNClub.Common.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\bin\Debug\net6.0\ASNClub.Common.pdb
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\obj\Debug\net6.0\ASNClub.DTOs.csproj.CopyComplete
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\obj\Debug\net6.0\ASNClub.DTOs.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\obj\Debug\net6.0\refint\ASNClub.DTOs.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\obj\Debug\net6.0\ASNClub.DTOs.pdb
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.DTOs\obj\Debug\net6.0\ref\ASNClub.DTOs.dll

@@ -10,19 +10,10 @@
         "dependencies": {
           "ASNClub.Data.Models": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.18",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15",
-          "Microsoft.EntityFrameworkCore.Tools": "6.0.15"
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.15"
         },
         "runtime": {
           "ASNClub.Data.dll": {}
-        }
-      },
-      "Humanizer.Core/2.8.26": {
-        "runtime": {
-          "lib/netstandard2.0/Humanizer.dll": {
-            "assemblyVersion": "2.8.0.0",
-            "fileVersion": "2.8.26.1919"
-          }
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.18": {
@@ -141,18 +132,6 @@
         }
       },
       "Microsoft.EntityFrameworkCore.Analyzers/6.0.18": {},
-      "Microsoft.EntityFrameworkCore.Design/6.0.15": {
-        "dependencies": {
-          "Humanizer.Core": "2.8.26",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.18"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "6.0.15.0",
-            "fileVersion": "6.0.1523.11510"
-          }
-        }
-      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.18": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "6.0.18",
@@ -175,11 +154,6 @@
             "assemblyVersion": "6.0.15.0",
             "fileVersion": "6.0.1523.11510"
           }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.Tools/6.0.15": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.Design": "6.0.15"
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
@@ -569,13 +543,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Humanizer.Core/2.8.26": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
-      "path": "humanizer.core/2.8.26",
-      "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
-    },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.18": {
       "type": "package",
       "serviceable": true,
@@ -639,13 +606,6 @@
       "path": "microsoft.entityframeworkcore.analyzers/6.0.18",
       "hashPath": "microsoft.entityframeworkcore.analyzers.6.0.18.nupkg.sha512"
     },
-    "Microsoft.EntityFrameworkCore.Design/6.0.15": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-fpK/x5BgGYxO0Uz1E8X/eiCZulsIvkWCPhFDaM54jiiRwlkWzE5mW+tzXpPWy7oY6rrd5JKXmvo2AqkRsNjKhQ==",
-      "path": "microsoft.entityframeworkcore.design/6.0.15",
-      "hashPath": "microsoft.entityframeworkcore.design.6.0.15.nupkg.sha512"
-    },
     "Microsoft.EntityFrameworkCore.Relational/6.0.18": {
       "type": "package",
       "serviceable": true,
@@ -659,13 +619,6 @@
       "sha512": "sha512-sNptOQ/eYXoj+IR9nysdD0jzF8mtYbrxYmhZ6s2OXeezGIoLs+gHreBWBw7tfpcC/Ezl/NUceCRbZ70XUtPA3g==",
       "path": "microsoft.entityframeworkcore.sqlserver/6.0.15",
       "hashPath": "microsoft.entityframeworkcore.sqlserver.6.0.15.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.Tools/6.0.15": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-xqbrSDOj+5xDD/bC7e6PIAH4iTqnuERgxJhwZxJMjULAUUs3cg+m66XQDDFRyTj3m4T1bZwrMZKhE5d/aGL1lg==",
-      "path": "microsoft.entityframeworkcore.tools/6.0.15",
-      "hashPath": "microsoft.entityframeworkcore.tools.6.0.15.nupkg.sha512"
     },
     "Microsoft.Extensions.Caching.Abstractions/6.0.0": {
       "type": "package",

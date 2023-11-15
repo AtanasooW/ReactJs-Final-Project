@@ -1,36 +1,12 @@
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.deps.json
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.dll
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.pdb
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.csproj.AssemblyReference.cache
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.GeneratedMSBuildEditorConfig.editorconfig
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.AssemblyInfoInputs.cache
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.AssemblyInfo.cs
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.csproj.CoreCompileInputs.cache
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.dll
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\obj\Debug\net6.0\refint\ASNClub.Common.dll
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.pdb
-C:\Kaufland\Programming\Softuni web project\ASNClub\ASNClub.Common\obj\Debug\net6.0\ref\ASNClub.Common.dll
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.deps.json
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.dll
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.pdb
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.csproj.AssemblyReference.cache
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.GeneratedMSBuildEditorConfig.editorconfig
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.AssemblyInfoInputs.cache
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.AssemblyInfo.cs
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.csproj.CoreCompileInputs.cache
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.dll
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\obj\Debug\net6.0\refint\ASNClub.Common.dll
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.pdb
-C:\Kaufland\Programming\ASN\Web\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ref\ASNClub.Common.dll
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.deps.json
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.dll
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.pdb
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.csproj.AssemblyReference.cache
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.GeneratedMSBuildEditorConfig.editorconfig
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.AssemblyInfoInputs.cache
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.AssemblyInfo.cs
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.csproj.CoreCompileInputs.cache
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.dll
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\obj\Debug\net6.0\refint\ASNClub.Common.dll
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.pdb
-D:\ASN\Asn-Project\ASN-Project\ASNClub.Common\obj\Debug\net6.0\ref\ASNClub.Common.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.deps.json
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\bin\Debug\net6.0\ASNClub.Common.pdb
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.csproj.AssemblyReference.cache
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.AssemblyInfoInputs.cache
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.AssemblyInfo.cs
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.csproj.CoreCompileInputs.cache
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\obj\Debug\net6.0\refint\ASNClub.Common.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\obj\Debug\net6.0\ASNClub.Common.pdb
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\ASNClub.Common\obj\Debug\net6.0\ref\ASNClub.Common.dll

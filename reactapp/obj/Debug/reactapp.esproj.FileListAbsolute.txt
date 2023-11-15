@@ -1,2 +1,4 @@
 C:\Users\Doroti\Desktop\Atanas\Front-End\Project\FrontEndProject\reactapp\obj\Debug\reactapp.esproj.SuggestedBindingRedirects.cache
 C:\Users\Doroti\Desktop\Atanas\Front-End\Project\FrontEndProject\reactapp\obj\Debug\reactapp.esproj.CoreCompileInputs.cache
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\reactapp\obj\Debug\reactapp.esproj.SuggestedBindingRedirects.cache
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\reactapp\obj\Debug\reactapp.esproj.CoreCompileInputs.cache

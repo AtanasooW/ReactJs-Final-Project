@@ -31,7 +31,7 @@ export default function NavigationBar(){
                     <div>
                         <FontAwesomeIcon icon={faCartShopping} size="2xl" />
                     </div>
-                    <h4>0.00$</h4>
+                    <h4>5.00$</h4>
                 </Link>
                 </div>
             </div>

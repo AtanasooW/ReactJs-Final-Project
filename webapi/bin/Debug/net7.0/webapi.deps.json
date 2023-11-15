@@ -2611,7 +2611,7 @@
         "dependencies": {
           "ASNClub.DTOs": "1.0.0",
           "ASNClub.Data": "1.0.0",
-          "ASNClub.Data.Models": "1.0.0"
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.18"
         },
         "runtime": {
           "ASNClub.Services.dll": {}

@@ -51,6 +51,7 @@
 }
 .userContainer{
     display: flex;
+    margin-right: 2em;
     flex-direction: row;
     gap: 0.75em
 }
@@ -60,5 +61,9 @@
 }
 .shoppingCartContainer a{
     display: flex;
+    align-items: center;
     flex-direction: row;
+}
+.shoppingCartContainer h4{
+    padding-left: 0.25em;
 }
