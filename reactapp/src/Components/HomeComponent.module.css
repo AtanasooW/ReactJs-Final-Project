@@ -1,0 +1,24 @@
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    
+}
+.background{
+    background-image: url('https://localhost:3000/images/BackgroundImgMK3.png');
+    padding: 42vh;
+    width: 31%;
+    background-repeat: no-repeat;
+}
+
+.categories div{
+    padding: 1.5em 1.5em;
+    border: lightgray 3px solid;
+}
+.categories ul li{
+    display: block;
+    padding: 1.5em 1.5em;
+    border-right: lightgray 3px solid;
+    border-left: lightgray 3px solid;
+    border-bottom: lightgray 3px solid;
+}

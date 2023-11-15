@@ -1,0 +1,64 @@
+.navbarHeader{
+    background-color: #0a111b;
+    color: #e8bd99;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25em 1em;
+    border-bottom: #cf2c44 3px solid;
+}
+.logoContainer{
+    border: #283E40 5px solid;
+    padding: 0.25em;
+}
+.logoContainer a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+.logoContainer a img{
+    width: 3em;
+    height: 3em;
+}
+.logoContainer a h2{
+    color: white;
+    font-size: 2em;
+    margin-left: 0.5em;
+}
+.logoContainer a h2 span{
+    font-size: 0.80em;
+    color: #cf2c44;
+}
+.navsContainer ul{
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+.navsContainer ul li{
+    display: block;
+}
+.navsContainer ul li a{
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 700;
+    color: #e8bd99;
+}
+.navsContainer ul li a:hover{
+    text-decoration: underline;
+    color: #DA957E;
+}
+.userContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 0.75em
+}
+.userContainer a {
+    text-decoration: none;
+    color: white;
+}
+.shoppingCartContainer a{
+    display: flex;
+    flex-direction: row;
+}
