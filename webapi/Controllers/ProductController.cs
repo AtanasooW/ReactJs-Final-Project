@@ -2,13 +2,17 @@
 using ASNClub.Services.CategoryServices.Contracts;
 using ASNClub.Services.ColorServices.Contracts;
 using ASNClub.Services.ProductServices.Contracts;
+using ASNClub.DTOs.Discount;
 using ASNClub.Services.TypeServices.Contracts;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace webapi.Controllers
 {
-    [Route("api/product")]
     [ApiController]
+    [Route("api/product")]
+    [EnableCors("AllowOrigin")]
+
     public class ProductController : Controller
     {
         private readonly IProductService productService;
@@ -38,6 +42,7 @@ namespace webapi.Controllers
             productDTO.Colors = await colorService.AllColorsAsync();
             productDTO.Types = await typeService.AllTypesAsync();
             productDTO.Discounts = await productService.AllDiscountsAsync();
+            productDTO.Discount = new DiscountFormDTO();
             return productDTO;
         }
         [HttpPost("Create")]

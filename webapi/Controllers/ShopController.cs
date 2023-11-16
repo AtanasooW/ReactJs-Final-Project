@@ -6,12 +6,14 @@ using ASNClub.Services.ProductServices;
 using ASNClub.Services.ProductServices.Contracts;
 using ASNClub.Services.TypeServices;
 using ASNClub.Services.TypeServices.Contracts;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace webapi.Controllers
 {
-    [Route("api/Shop")]
     [ApiController]
+    [Route("api/Shop")]
+    [EnableCors("AllowOrigin")]
     public class ShopController : Controller
     {
         private readonly IProductService productService;
