@@ -6,6 +6,7 @@ using ASNClub.DTOs.Discount;
 using ASNClub.Services.TypeServices.Contracts;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
+using System.IO;
 
 namespace webapi.Controllers
 {
@@ -46,53 +47,40 @@ namespace webapi.Controllers
             return productDTO;
         }
         [HttpPost("Create")]
-        public async Task<IActionResult> CreateProduct([FromForm]ProductFormDTO productDTO)
+        public async Task<IActionResult> CreateProduct(ProductFormDTO productDTO)
         {
-            Console.WriteLine(productDTO);
-            //if (!ModelState.IsValid)
-            //{
-            //    return BadRequest();
-            //}
-            //productDTO.ImgUrls = await UploadImgs(productDTO.Imgs);
-            //await productService.CreateProductAsync(productDTO);
-            //List<IFormFile> imgs = new List<IFormFile>();
-            //if (Request.Form.Files.Count > 0)
-            //{
-            //  imgs = Request.Form.Files.ToList();
-            //   productDTO.ImgUrls = await UploadImgs(imgs);
-            // da go duhash
-            //}
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            await productService.CreateProductAsync(productDTO);
             return StatusCode(201);
-            //ebi si maikata nase pedal grozen
-            //krokodila che te naebe na zadna
-
-
         }
         [HttpPost("Photos")]
-        public async Task<List<string>> UploadImgs(List<IFormFile> files)//cannot get collections
+        public async Task<IActionResult> UploadImgs(IFormFile file)//cannot get collections
         {
-            List<string> newUrls = new List<string>();
 
-            foreach (var file in files)
+            if (file != null && file.Length > 0)
             {
-                if (file != null && file.Length > 0)
+                // Process each file and save it to the server
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                var filePath = Path.Combine("wwwroot/images", fileName);
+
+                using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
-                    // Process each file and save it to the server
-                    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                    var filePath = Path.Combine("wwwroot/images", fileName);
-
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        file.CopyTo(fileStream);
-                    }
-
-                    // Construct the URL for the newly uploaded image
-                    var imageUrl = Url.Content($"~/images/{fileName}");
-                    newUrls.Add(imageUrl);
+                    file.CopyTo(fileStream);
                 }
-            }
 
-            return newUrls;
+                // Construct the URL for the newly uploaded image
+                var imageUrl = Url.Content($"~/images/{fileName}");
+                var response = new ImageUploadResponseDTO
+                {
+                    Url = imageUrl,
+                };
+                return Ok(response);
+            }
+            return BadRequest("File not provided or invalid.");
+
         }
 
 

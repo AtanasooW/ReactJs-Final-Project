@@ -102,7 +102,7 @@ namespace ASNClub.Services.ProductServices
                 Description = formModel.Description,
                 TypeId = formModel.TypeId,
                 Quantity = formModel.Quantity,
-                ColorId = formModel.ColorId == 1 ? null : formModel.ColorId,// TO DO: do the logic to set null auto not id=1
+                ColorId = formModel.ColorId == 0 || formModel.ColorId == 1 ? null : formModel.ColorId,// TO DO: do the logic to set null auto not id=1
                 CategoryId = formModel.CategoryId
             };
             //Create discount logic 
@@ -281,6 +281,7 @@ namespace ASNClub.Services.ProductServices
         {
             IEnumerable<DiscountViewDTO> discountDTO = await dbContext.Discounts //need fix
                 .AsNoTracking()
+                .Where(x=> x.Name != null || x.Name != "")
                 .GroupBy(x=> x.Name)
                 .Select(x => new DiscountViewDTO
                 {

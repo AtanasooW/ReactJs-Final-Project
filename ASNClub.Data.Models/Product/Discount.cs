@@ -7,9 +7,9 @@ namespace ASNClub.Data.Models.Product
         [Key]
         public int Id { get; set; }
         [Required]
-        public string Name { get; set; } = null!;
-        [Required]
         public bool IsDiscount { get; set; } = false;
+        
+        public string? Name { get; set; }
         
         public double? DiscountRate { get; set; }
         
