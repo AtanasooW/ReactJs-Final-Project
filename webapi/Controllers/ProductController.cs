@@ -46,38 +46,55 @@ namespace webapi.Controllers
             return productDTO;
         }
         [HttpPost("Create")]
-        public async Task<IActionResult> CreateProduct(ProductFormDTO productDTO)
+        public async Task<IActionResult> CreateProduct([FromForm]ProductFormDTO productDTO)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest();
-            }
-            productDTO.ImgUrls = await UploadImgs(productDTO.Imgs);
-            await productService.CreateProductAsync(productDTO);
+            Console.WriteLine(productDTO);
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest();
+            //}
+            //productDTO.ImgUrls = await UploadImgs(productDTO.Imgs);
+            //await productService.CreateProductAsync(productDTO);
+            //List<IFormFile> imgs = new List<IFormFile>();
+            //if (Request.Form.Files.Count > 0)
+            //{
+            //  imgs = Request.Form.Files.ToList();
+            //   productDTO.ImgUrls = await UploadImgs(imgs);
+            // da go duhash
+            //}
             return StatusCode(201);
+            //ebi si maikata nase pedal grozen
+            //krokodila che te naebe na zadna
+
+
         }
-        private async Task<List<string>> UploadImgs(List<IFormFile> imgs)
+        [HttpPost("Photos")]
+        public async Task<List<string>> UploadImgs(List<IFormFile> files)//cannot get collections
         {
-            List<string> urls = new List<string>();
-            foreach (var img in imgs)
+            List<string> newUrls = new List<string>();
+
+            foreach (var file in files)
             {
-                var saveimg = Path.Combine(webHost.WebRootPath, "Images", img.FileName);
-                string imgEnding = Path.GetExtension(img.FileName);
-                if (imgEnding == ".jpg" || imgEnding == ".png")
+                if (file != null && file.Length > 0)
                 {
-                    using (var fileStream = new FileStream(saveimg, FileMode.Create))
+                    // Process each file and save it to the server
+                    var fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    var filePath = Path.Combine("wwwroot/images", fileName);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
-                        await img.CopyToAsync(fileStream);
+                        file.CopyTo(fileStream);
                     }
-                    urls.Add(saveimg);
-                }
-                else
-                {
-                    throw new InvalidCastException("Invalid img type");
+
+                    // Construct the URL for the newly uploaded image
+                    var imageUrl = Url.Content($"~/images/{fileName}");
+                    newUrls.Add(imageUrl);
                 }
             }
-            return urls;
+
+            return newUrls;
         }
+
 
 
         [HttpPost("Delete")]

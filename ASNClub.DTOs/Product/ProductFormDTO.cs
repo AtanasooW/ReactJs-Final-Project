@@ -16,7 +16,6 @@ namespace ASNClub.DTOs.Product
             this.Colors = new HashSet<ColorFormDTO>();
             this.Types = new HashSet<TypeFormDTO>();
             this.ImgUrls = new List<string>();
-            this.Imgs = new List<IFormFile>();
         }
         public int? Id { get; set; }
         [Required]
@@ -28,7 +27,7 @@ namespace ASNClub.DTOs.Product
         [Display(Name = "Type")]
         public int TypeId { get; set; }
 
-        public IEnumerable<TypeFormDTO> Types { get; set; }
+        public IEnumerable<TypeFormDTO>? Types { get; set; }
         [Required]
         [Column(TypeName = "decimal(18,2)")]
         public decimal Price { get; set; }
@@ -38,7 +37,7 @@ namespace ASNClub.DTOs.Product
         //This is for dropdown menu for the names of the discounts
         [Display(Name = "Discount")]
         public int? DiscountId { get; set; }
-        public IEnumerable<DiscountViewDTO> Discounts { get; set; }
+        public IEnumerable<DiscountViewDTO>? Discounts { get; set; }
 
 
         [Required]
@@ -50,14 +49,12 @@ namespace ASNClub.DTOs.Product
         [Display(Name = "Category")]
         public int CategoryId { get; set; }
 
-        public IEnumerable<CategoryFormDTO> Categories { get; set; }
-        [Required]
-        public List<IFormFile> Imgs { get; set; } = null!;
+        public IEnumerable<CategoryFormDTO>? Categories { get; set; }
         public List<string> ImgUrls { get; set; }
 
         [Display(Name = "Color")]
         public int? ColorId { get; set; }
 
-        public IEnumerable<ColorFormDTO> Colors { get; set; }
+        public IEnumerable<ColorFormDTO>? Colors { get; set; }
     }
 }

@@ -10,7 +10,7 @@ const formInitialState = {
   discount: {
       isDiscount: false,
       name: '',
-      discountRate: '',
+      discountRate: 0,
       startDate: '',
       endDate: ''
   },
@@ -34,22 +34,25 @@ export default function AddProduct(){
         fetch("https://localhost:7047/api/product/Create")
         .then(responese => responese.json())
         .then(d => setData(d))
-      }, []);    
+  }, []);    
     // Need to fix the discount logic about not going in one object!!!!
-      const changeHandler = (e) => {
-        let value = e.target.value;
-        console.log(value);
-        if(e.target.name.startsWith("discount")){
-          setFormValues(state => ({
-            ...state,
-            discount: {[e.target.name]: value},
-          }));
-        }
+    const changeHandler = (e) => {
+      let value = e.target.value;
+      console.log(value);
+      if(e.target.name.startsWith("discount")){
         setFormValues(state => ({
           ...state,
-          [e.target.name]: value,
+          discount: {...state.discount,
+            [(e.target.name).slice(9)]: value},
         }));
-      };
+      }
+      else{
+        setFormValues(state => ({
+        ...state,
+        [e.target.name]: value,
+        }));
+      }
+    };
   function DiscountChange(){
     data.discount.isDiscount = !checkedDiscount
     setChekedDiscount(!checkedDiscount);
@@ -59,23 +62,41 @@ export default function AddProduct(){
   }
   function ImageUpload(e) {
     const selectedFiles = Array.from(e.target.files);
-      
-        // Use map to create an array of URLs from the selected files
-    const fileUrls = selectedFiles.map((file) => URL.createObjectURL(file));
-      
-        // Set the file state to the array of file URLs
-    setFile(fileUrls);
-      
-        // Logging the file objects htmlFor further processing if needed
-    console.log(selectedFiles);
+    
+    setFormValues(state => ({
+      ...state,
+      imgs: {...state.imgs,
+        img: e.target.files[0]}
+    }))
+    e.target.files.map(file => {
+      const formData = new FormData();
+      formData.append('file', file);
+      fetch('https://localhost:7047/api/product/Photos', {
+      method: 'POST',
+      body: formData,
+    })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Image uploaded successfully', data);
+      })
+      .catch(error => {
+        console.error('Error uploading image', error);
+      });
+    });
   }
+  
+  
   function SubmitForm(e) {
     e.preventDefault();
-    console.log(formValues);
-    return;
+  
+    console.log(formValues)
     fetch("https://localhost:7047/api/product/Create", {
-      method: "POST",
-      body: formValues,
+      method: "POST", 
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formValues), // Send formValues directly
     })
       .then(response => response.json())
       .then(data => {
