@@ -63,7 +63,7 @@ builder.Services.AddCors(c =>
 });
 var app = builder.Build();
 app.UseCors("AllowOrigin");
-
+app.UseStaticFiles();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

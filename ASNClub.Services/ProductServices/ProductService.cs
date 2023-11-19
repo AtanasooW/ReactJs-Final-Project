@@ -233,7 +233,6 @@ namespace ASNClub.Services.ProductServices
             else
             {
                 product.Discount.Name = String.Empty;
-                product.Discount.IsDiscount = false;
                 product.Discount.DiscountRate = null;
                 product.Discount.StartDate = null;
                 product.Discount.EndDate = null;
@@ -248,6 +247,44 @@ namespace ASNClub.Services.ProductServices
             product.CategoryId = productDTO.CategoryId;
             product.ColorId = productDTO.ColorId;
 
+            var oldUrls = await dbContext.ProductsImgUrls.Where(x=> x.ProductId == product.Id).Include(x=> x.ImgUrl).Select(x => x.ImgUrl.Url).ToListAsync();
+            //Adding new images
+            foreach (var newUrl in productDTO.ImgUrls)
+            {
+                if (!oldUrls.Contains(newUrl))
+                {
+                    //Add the new image url to the database and get the id for the next step (add the mapping table save)
+                    ImgUrl newImageUrl = new ImgUrl
+                    {
+                        Url = newUrl,
+                    };
+                    await dbContext.ImgUrls.AddAsync(newImageUrl);
+                    await dbContext.SaveChangesAsync();
+                    //Adding the map save to the database and the object
+                    ProductImgUrl newProductImgUrl = new ProductImgUrl
+                    {
+                        ProductId = product.Id,
+                        ImgUrlId = newImageUrl.Id,
+                    };
+                    product.ImgUrls.Add(newProductImgUrl);
+                    await dbContext.ProductsImgUrls.AddAsync(newProductImgUrl);
+                    await dbContext.SaveChangesAsync();
+                }
+            }
+            //Remove removed images
+            foreach (var oldUrl in oldUrls)
+            {
+                if (!productDTO.ImgUrls.Contains(oldUrl))
+                {
+                    var removedProductImgUrl = await dbContext.ProductsImgUrls.Where(x => x.ImgUrl.Url == oldUrl).FirstAsync();
+                    var removedImgUrl = await dbContext.ImgUrls.Where(x => x.Url == oldUrl).FirstAsync();
+
+                    product.ImgUrls.Remove(removedProductImgUrl);
+                    dbContext.ProductsImgUrls.Remove(removedProductImgUrl);
+                    dbContext.ImgUrls.Remove(removedImgUrl);
+                    await dbContext.SaveChangesAsync();
+                }
+            }
             await dbContext.SaveChangesAsync();
         }
 
@@ -281,7 +318,7 @@ namespace ASNClub.Services.ProductServices
         {
             IEnumerable<DiscountViewDTO> discountDTO = await dbContext.Discounts //need fix
                 .AsNoTracking()
-                .Where(x=> x.Name != null || x.Name != "")
+                .Where(x=> !string.IsNullOrEmpty(x.Name))
                 .GroupBy(x=> x.Name)
                 .Select(x => new DiscountViewDTO
                 {

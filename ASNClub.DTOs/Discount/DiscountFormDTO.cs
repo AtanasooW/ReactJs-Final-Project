@@ -9,7 +9,7 @@ namespace ASNClub.DTOs.Discount
     public class DiscountFormDTO
     {
         public bool IsDiscount { get; set; } = false;
-        public string Name { get; set; } = null!;
+        public string? Name { get; set; }
 
         public double? DiscountRate { get; set; }
 

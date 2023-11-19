@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import ApiUrl from "../Common/Url";
-import styles from "./AddProduct.module.css"
+import ApiUrl from "../../Common/Url";
+import styles from "./CreateProduct.module.css"
 import { useNavigate } from "react-router-dom";
 
 const formInitialState = {
@@ -23,7 +23,7 @@ const formInitialState = {
   imgUrls: [],
   colorId: 0,
 }
-export default function AddProduct(){
+export default function CreateProduct(){
   const navigate = useNavigate();
   const [data, setData] = useState([]);
   const[checkedDiscount, setChekedDiscount] = useState(false);
@@ -38,7 +38,6 @@ export default function AddProduct(){
         .then(responese => responese.json())
         .then(d => setData(d))
   }, []);    
-    // Need to fix the discount logic about not going in one object!!!!
     const changeHandler = (e) => {
       let value = e.target.value;
       console.log(value);

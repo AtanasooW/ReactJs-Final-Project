@@ -38,8 +38,6 @@ namespace ASNClub.DTOs.Product
         [Display(Name = "Discount")]
         public int? DiscountId { get; set; }
         public IEnumerable<DiscountViewDTO>? Discounts { get; set; }
-
-
         [Required]
         public string Description { get; set; } = null!;
         [Required]

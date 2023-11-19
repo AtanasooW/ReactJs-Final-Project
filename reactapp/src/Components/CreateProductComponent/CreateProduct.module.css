@@ -76,7 +76,6 @@ input[type="file"] {
 .checkBoxContainer input{
     max-width: 13%;
 }
-
 .imageUploadContainer{
     position: relative;
     display: flex;

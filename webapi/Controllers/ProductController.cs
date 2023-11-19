@@ -83,20 +83,10 @@ namespace webapi.Controllers
 
         }
 
-
-
-        [HttpPost("Delete")]
-        public async Task<IActionResult> DeleteProduct(int productId)
-        {
-            await productService.DeleteProductAsync(productId);
-            return StatusCode(200);
-        }
-
-
         [HttpGet("Update")]
-        public async Task<ProductFormDTO> UpdateProduct(int productId)
+        public async Task<ProductFormDTO> UpdateProduct(int id)
         {
-            var productDTO = await productService.GetProductForEditAsync(productId);
+            var productDTO = await productService.GetProductForEditAsync(id);
             productDTO.Categories = await categoryService.AllCategoriesAsync();
             productDTO.Colors = await colorService.AllColorsAsync();
             productDTO.Types = await typeService.AllTypesAsync();
@@ -111,6 +101,13 @@ namespace webapi.Controllers
                 return BadRequest();
             }
             await productService.EditProductAsync(productDTO);
+            return StatusCode(200);
+        }
+
+        [HttpPost("Delete")]
+        public async Task<IActionResult> DeleteProduct(int productId)
+        {
+            await productService.DeleteProductAsync(productId);
             return StatusCode(200);
         }
     }
