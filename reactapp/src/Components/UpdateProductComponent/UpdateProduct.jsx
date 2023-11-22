@@ -2,7 +2,7 @@ import {useState, useEffect} from "react"
 import { useNavigate } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import ApiUrl from "../../Common/Url";
-import styles from "./UpdateProduct.module.css"
+import styles from "../CreateProductComponent/CreateProduct.module.css"
 const formInitialState = {
     id: '',
     make : '',
@@ -71,8 +71,8 @@ const formInitialState = {
         setChekedColor(!checkedColor);
     }
     function ImageUpload(e) {
-        const selectedFiles = Array.from(e.target.files);
-        setImages(state=> ({...state,...selectedFiles}));
+      const selectedFiles = Array.from(e.target.files);
+      setImages(selectedFiles);
         
         console.log('a')
         const fileUrls = selectedFiles.map((file) => URL.createObjectURL(file));//{url: URL.createObjectURL(file), fileName: file.name}
@@ -105,6 +105,7 @@ const formInitialState = {
         e.preventDefault();
         try {
             // Step 1: Upload images and collect URLs
+            console.log(images)
             const uploadPromises = images.map(async (file) => {
               const formData = new FormData();
               formData.append('file', file);
@@ -124,7 +125,6 @@ const formInitialState = {
             });
         
             const uploadedData = await Promise.all(uploadPromises);
-        
             // Step 2: Use the collected URLs in formValues
             const newImgUrls = uploadedData.map((data) => `${ApiUrl}${data.url}`);
             console.log(formValues);
@@ -216,25 +216,25 @@ const formInitialState = {
               </div>) : (null)}
               <div className={styles.checkBoxContainer}>
                 <label id={styles.checkLabel}>Add Discount</label>
-                <input id="discountCheckbox" type="checkbox" value={formValues.discount.isDiscount} onChange={DiscountChange}/> 
+                <input id="discountCheckbox" type="checkbox" onChange={DiscountChange}/> {/* must fix that when something have discount doesnt display  */}
               </div>
                {checkedDiscount ? (
                 <div>
                   <div>
                     <label htmlFor="discount.name">Discount Name:</label><br/>
-                    <input type="text" id="discount.name" name="discount.name" placeholder="Black Friday 5%" onChange={changeHandler}/><br/>
+                    <input type="text" id="discount.name" name="discount.name" placeholder="Black Friday 5%" value={formValues.discount.name} onChange={changeHandler}/><br/>
                   </div>
                   <div>
                     <label htmlFor="discount.discountRate">Discount Rate:</label><br/>
-                    <input type="number" id="discount.discountRate" name="discount.discountRate" placeholder="5" onChange={changeHandler}/><br/>
+                    <input type="number" id="discount.discountRate" name="discount.discountRate" placeholder="5" value={formValues.discount.discountRate} onChange={changeHandler}/><br/>
                   </div>
                   <div>
                     <label htmlFor="discount.startDate">Discount Start Date:</label><br/>
-                    <input type="date" id="discount.startDate" name="discount.startDate" onChange={changeHandler}/><br/>
+                    <input type="date" id="discount.startDate" name="discount.startDate" value={formValues.discount.startDate} onChange={changeHandler}/><br/>
                   </div>
                   <div>
                     <label htmlFor="discount.endDate">Discount End Date:</label><br/>
-                    <input type="date" id="discount.endDate" name="discount.endDate" onChange={changeHandler}/><br/>
+                    <input type="date" id="discount.endDate" name="discount.endDate" value={formValues.discount.endDate} onChange={changeHandler}/><br/>
                   </div>
                   <div>
                 <label htmlFor="discountId">Discounts</label><br/>
