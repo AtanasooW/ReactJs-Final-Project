@@ -34,7 +34,7 @@ export default function CreateProduct(){
   const[images,setImages] = useState([]);
 
   useEffect(() => {
-        fetch("https://localhost:7047/api/product/Create")
+        fetch(`${ApiUrl}/api/product/Create`)
         .then(responese => responese.json())
         .then(d => setData(d))
   }, []);    

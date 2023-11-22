@@ -1,0 +1,39 @@
+.biggerSpan{
+    font-weight: 500;
+}
+select, input{
+    width: 90%;
+    background-color: #8facd5;
+    color: white;
+    border-radius: 5px;
+    border: #0a111b solid 2px;
+    margin-bottom: 0.5em;   
+}
+.contentContainer{
+    margin: 0 2em 2em 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+.optionsContainer{
+    flex:1;
+    padding: 0.5em 0 0 0.5em;
+    background-color: #e8bd99;
+    border-right: #0a111b solid 2px;
+    margin-right: 2em;
+}
+.optionsContainer form{
+    display: flex;
+    flex-direction: column;
+}
+.optionsContainer form div select{
+}
+.mainContainer{
+    flex: 7;
+}
+.productsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:2em;
+}

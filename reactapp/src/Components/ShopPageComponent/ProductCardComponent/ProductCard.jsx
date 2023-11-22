@@ -1,58 +1,27 @@
 import styles from "./ProductCard.module.css"
 import React from "react";
-import {
-    MDBContainer,
-    MDBRow,
-    MDBCol,
-    MDBCard,
-    MDBCardBody,
-    MDBCardImage,
-    MDBIcon,
-    MDBBtn,
-    MDBRipple,
-  } from "mdb-react-ui-kit";
-export default function ProductCard(props){
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-<div className={styles.productCard}>
-    <div className={styles.imageContainer}>
-        <img src={props.imgUrl} alt="" />
-    </div>
-<MDBCard>
-            <MDBRipple
-              rippleColor="light"
-              rippleTag="div"
-              className="bg-image rounded hover-zoom"
-            >
-              <MDBCardImage
-                src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Products/belt.webp"
-                fluid
-                className="w-100"
-              />
-              <a href="#!">
-                <div className="mask">
-                  <div className="d-flex justify-content-start align-items-end h-100">
-                    <h5>
-                      <span className="badge bg-primary ms-2">New</span>
-                    </h5>
-                  </div>
-                </div>
-                <div className="hover-overlay">
-                  <div
-                    className="mask"
-                    style={{ backgroundColor: "rgba(251, 251, 251, 0.15)" }}
-                  ></div>
-                </div>
-              </a>
-            </MDBRipple>
-            <MDBCardBody>
-              <a href="#!" className="text-reset">
-                <h5 className="card-title mb-3">Product name</h5>
-              </a>
-              <a href="#!" className="text-reset">
-                <p>Category</p>
-              </a>
-              <h6 className="mb-3">$61.99</h6>
-            </MDBCardBody>
-</MDBCard>
-                </div>
+export default function ProductCard(product){
+  console.log("a");
+  console.log(product);
+  return (
+    <Card className={styles.card}>
+      <Card.Img variant="top" src={product.imgUrl} />
+      <Card.Body>
+        <Card.Title>{product.type} for {product.make} {product.model}</Card.Title>
+        <Card.Text>
+          Rating:
+        </Card.Text>
+        <Card.Text className={styles.price}>
+          Price: <span className={styles.whiteSpan}>${product.price}</span>
+        </Card.Text>
+        <div className={styles.buttonContainer}>
+        <Button className={styles.redButton}>View Details</Button>
+        <Button className={styles.blueButton}>Buy now</Button>
+        </div>
+      </Card.Body>
+    </Card>
+  );
 }

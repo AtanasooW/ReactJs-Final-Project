@@ -31,8 +31,20 @@ namespace webapi.Controllers
             this.typeService = _typeService;
         }
         [HttpGet("All")]
-        public async Task<AllProductQueryModel> GetAllProducts([FromQuery] AllProductQueryModel queryModel)
+        public async Task<AllProductQueryModel> GetAllProducts(string? make,
+            string? type,
+            string? category,
+            double? minPrice,
+            double? maxPrice)
         {
+            AllProductQueryModel queryModel = new AllProductQueryModel()
+            {
+                Make = make,
+                Type = type,
+                Category = category,
+                MinPrice = minPrice,
+                MaxPrice = maxPrice
+            };
             AllProductsSortedDTO serviceModel = await productService.GetAllProductsAsync(queryModel);
             queryModel.Products = serviceModel.Products;
             queryModel.TotalProducts = serviceModel.TotalProducts;
