@@ -6,6 +6,7 @@ import HomeComponent from './Components/HomePageComponent/HomeComponent';
 import ShopComponent from './Components/ShopPageComponent/ShopComponent';
 import CreateProduct from './Components/CreateProductComponent/CreateProduct';
 import UpdateProduct from './Components/UpdateProductComponent/UpdateProduct';
+import DetailsComponent from './Components/DetailsPageComponent/DetailsComponent';
 
 export default function App() {
     return(
@@ -15,6 +16,7 @@ export default function App() {
                 <Routes>
                     <Route index element={<HomeComponent/>}/>
                     <Route path="/shop" element={<ShopComponent/>}/>
+                    <Route path="/shop/:id" element={<DetailsComponent/>}/>
                     <Route path="/createProduct" element={<CreateProduct/>}/>
                     <Route path="/updateProduct/:id" element={<UpdateProduct/>}/>
                 </Routes>

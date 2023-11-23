@@ -56,7 +56,7 @@ export default function ShopComponent(){
             <div className={styles.optionsContainer}>
             <form action="Get">
                 <div>
-                    <label className={styles.biggerSpan} htmlFor="type">Type</label><br/>
+                    <label className={styles.biggerLabel} htmlFor="type">Type</label><br/>
                     <select id="type" name="type" onChange={changeHandler} >
                         <option>All</option>
                         {data.types && data.types.map(element => (
@@ -65,7 +65,7 @@ export default function ShopComponent(){
                     </select>
                 </div>
                 <div>
-                    <label className={styles.biggerSpan} htmlFor="category">Category</label><br/>
+                    <label className={styles.biggerLabel} htmlFor="category">Category</label><br/>
                     <select id="category" name="category" onChange={changeHandler} >
                         <option>All</option>
                         {data.categories && data.categories.map(category => (
@@ -74,29 +74,29 @@ export default function ShopComponent(){
                     </select>
                 </div>
                 <div>
-                    <label className={styles.biggerSpan} htmlFor="make">Makes</label><br/>
+                    <label className={styles.biggerLabel} htmlFor="make">Makes</label><br/>
                     <select id="make" name="make" onChange={changeHandler} >
                         <option>All</option>
                         {data.makes && data.makes.map(make => (
-                            <option key={make} value={make} >{make}</option>
+                            <option key={make} value={make}>{make}</option>
                             ))}
                     </select>
                 </div>
                 <div>
-                    <label className={styles.biggerSpan} htmlFor="model">Models</label><br/>
+                    <label className={styles.biggerLabel} htmlFor="model">Models</label><br/>
                     <select id="model" name="model" onChange={changeHandler} >
                         <option>All</option>
                         {data.models && data.models.map(model => (
-                            <option key={model} value={model} >{model}</option>
+                            <option key={model} value={model}>{model}</option>
                             ))}
                     </select>
                 </div>
                 <div>
-                    <label className={styles.biggerSpan} htmlFor="minPrice">Minimum price</label><br/>
+                    <label className={styles.biggerLabel} htmlFor="minPrice">Minimum price</label><br/>
                     <input type="text" id="minPrice" name="minPrice" placeholder="1" value={fromValues.minPrice} onChange={changeHandler}/><br/>
                 </div>
                 <div>
-                    <label className={styles.biggerSpan} htmlFor="maxPrice">Maximum price</label><br/>
+                    <label className={styles.biggerLabel} htmlFor="maxPrice">Maximum price</label><br/>
                     <input type="text" id="maxPrice" name="maxPrice" placeholder="1" value={maxPrice} onChange={changeHandler}/><br/>
                 </div>
             </form>
@@ -106,23 +106,30 @@ export default function ShopComponent(){
             <div className={styles.mainContainer}>
                 <div className={styles.sortContainer}>
                     <form action="Get">
-                    <div>
-                    <label className={styles.biggerSpan} htmlFor="productSorting">Sort by</label><br/>
-                    <select id="productSorting" name="productSorting" onChange={changeHandler} >
-                        <option key={16} value={16}>16</option>
-                        <option key={20} value={20}>20</option>
-                        <option key={24} value={24}>24</option>
-                          
-                    </select>
+                        <div>
+                            <h1>ASN Club shop</h1>
+                        </div>
+                    <div className={styles.dropDownContainer}>
+
+                    <div className={styles.productsPerPage}>
+                        <label className={styles.biggerLabel} htmlFor="productsPerPage">Products per page</label>
+                        <select id="productsPerPage" name="productsPerPage" onChange={changeHandler} >
+                            <option key={16} value={16}>16</option>
+                            <option key={20} value={20}>20</option>
+                            <option key={24} value={24}>24</option> 
+                        </select>
+                    </div >
+                        <div className={styles.sortingContainer}>
+                            <label className={styles.biggerLabel} htmlFor="productSorting">Sort by</label>
+                            <select id="productSorting" name="productSorting" onChange={changeHandler} >
+                                <option key={0} value={0}>Price Ascending</option>
+                                <option key={1} value={1}>Price Descending</option>
+                                <option key={2} value={2}>Rating Ascending</option>
+                                <option key={3} value={3}>Rating Descending</option>
+                                <option key={4} value={4}>On sale</option>
+                            </select>
+                        </div>
                     </div>
-                        <div>
-                            <p>Sort by</p>
-                            <select name="productSorting" id="productSorting"></select>
-                        </div>
-                        <div>
-                            <p>Show by</p>
-                            <select name="productsPerPage" id="productsPerPage"></select>
-                        </div>
                     </form>
                 </div>
                 <div className={styles.productsContainer}>

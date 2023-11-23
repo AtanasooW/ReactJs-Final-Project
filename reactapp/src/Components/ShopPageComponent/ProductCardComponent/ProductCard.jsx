@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 
 export default function ProductCard(product){
   console.log("a");
+  console.log(product.id)
   console.log(product);
   return (
     <Card className={styles.card}>
@@ -18,7 +19,8 @@ export default function ProductCard(product){
           Price: <span className={styles.whiteSpan}>${product.price}</span>
         </Card.Text>
         <div className={styles.buttonContainer}>
-        <Button className={styles.redButton}>View Details</Button>
+          
+        <a href={`/shop/${product.id}`}><Button className={styles.redButton}>View Details</Button></a>
         <Button className={styles.blueButton}>Buy now</Button>
         </div>
       </Card.Body>

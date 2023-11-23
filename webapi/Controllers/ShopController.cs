@@ -32,18 +32,24 @@ namespace webapi.Controllers
         }
         [HttpGet("All")]
         public async Task<AllProductQueryModel> GetAllProducts(string? make,
+            string? model,
             string? type,
             string? category,
             double? minPrice,
-            double? maxPrice)
+            double? maxPrice,
+            int productSorting,
+            int productsPerPage)
         {
             AllProductQueryModel queryModel = new AllProductQueryModel()
             {
                 Make = make,
+                Model = model,
                 Type = type,
                 Category = category,
                 MinPrice = minPrice,
-                MaxPrice = maxPrice
+                MaxPrice = maxPrice,
+                ProductSorting = (ASNClub.ViewModels.Product.Enums.ProductSorting)productSorting,
+                ProductsPerPage = productsPerPage
             };
             AllProductsSortedDTO serviceModel = await productService.GetAllProductsAsync(queryModel);
             queryModel.Products = serviceModel.Products;

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XtkNk0+jrKwfehDUuxIkiEcviBoEAzvJ7MkzrqRi4Zo=",
+  "Hash": "XG/rnEog2wyaSCIKyZUx8y/+aBQbe3tbnIFGQMiReEA=",
   "Source": "webapi",
   "BasePath": "_content/webapi",
   "Mode": "Default",
@@ -1343,6 +1343,23 @@
       "OriginalItemSpec": "wwwroot\\images\\24d95f81-0294-4409-8c35-1dbfaed1094c.jpg"
     },
     {
+      "Identity": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\261b6e53-c16b-4c3b-8127-37df94663cde.png",
+      "SourceId": "webapi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\",
+      "BasePath": "_content/webapi",
+      "RelativePath": "images/261b6e53-c16b-4c3b-8127-37df94663cde.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\261b6e53-c16b-4c3b-8127-37df94663cde.png"
+    },
+    {
       "Identity": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\29040221-25c1-41b5-b4ed-6bc4a4669850.jpg",
       "SourceId": "webapi",
       "SourceType": "Discovered",
@@ -1426,6 +1443,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\3384ed99-6bc3-486c-b7c6-654f02da671c.png"
+    },
+    {
+      "Identity": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3584f486-ec84-4eca-83ad-dd92fe18066d.png",
+      "SourceId": "webapi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\",
+      "BasePath": "_content/webapi",
+      "RelativePath": "images/3584f486-ec84-4eca-83ad-dd92fe18066d.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3584f486-ec84-4eca-83ad-dd92fe18066d.png"
     },
     {
       "Identity": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\385a54cf-17d6-42b1-aaa6-d46c75380822.png",
@@ -2176,6 +2210,23 @@
       "OriginalItemSpec": "wwwroot\\images\\7d55dd2f-cea2-436b-892d-a3332823015a.jpg"
     },
     {
+      "Identity": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\808dc447-7880-4522-8e94-427b2a0c6b12.png",
+      "SourceId": "webapi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\",
+      "BasePath": "_content/webapi",
+      "RelativePath": "images/808dc447-7880-4522-8e94-427b2a0c6b12.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\808dc447-7880-4522-8e94-427b2a0c6b12.png"
+    },
+    {
       "Identity": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\828d9a9b-08d7-497b-a038-2ecc82354806.jpg",
       "SourceId": "webapi",
       "SourceType": "Discovered",
@@ -2208,6 +2259,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\839a118f-57ac-4290-85cc-f914a8851158.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\844afe92-65ec-42cc-a198-837b9e4078bf.png",
+      "SourceId": "webapi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\",
+      "BasePath": "_content/webapi",
+      "RelativePath": "images/844afe92-65ec-42cc-a198-837b9e4078bf.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\844afe92-65ec-42cc-a198-837b9e4078bf.png"
     },
     {
       "Identity": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8566681b-558c-4b6a-8fb4-b0732e733ccd.jpg",
