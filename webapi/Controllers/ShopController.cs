@@ -63,5 +63,15 @@ namespace webapi.Controllers
             }
             return queryModel;
         }
+        [HttpGet("Details")]
+        public async Task<IActionResult> Details(int id)
+        {
+            var model = await productService.GetProductDetailsByIdAsync(id);
+            if (model == null)
+            {
+                return BadRequest("Product not found");
+            }
+            return Ok(model);
+        }
     }
 }

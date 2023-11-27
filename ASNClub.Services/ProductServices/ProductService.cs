@@ -1,5 +1,6 @@
 ﻿using ASNClub.Data;
 using ASNClub.Data.Models.Product;
+using ASNClub.DTOs.Color;
 using ASNClub.DTOs.Discount;
 using ASNClub.DTOs.Product;
 using ASNClub.Services.ProductServices.Contracts;
@@ -293,7 +294,44 @@ namespace ASNClub.Services.ProductServices
             return await dbContext.Products.Include(x => x.Discount).Where(x => x.Id == id).FirstOrDefaultAsync();
         }
 
-
+        public async Task<ProductDetailsDTO?> GetProductDetailsByIdAsync(int id)
+        {
+            var product = await dbContext.Products
+                .Where(x => x.Id == id)
+                .Include(x => x.Ratings)// Include the Ratings collection
+                .Include(x => x.Discount)
+                .Select(x => new ProductDetailsDTO
+                {
+                    Id = x.Id,
+                    Make = x.Make,
+                    Model = x.Model,
+                    Price = x.Price,
+                    Description = x.Description,
+                    Category = x.Category.Name,
+                    Type = x.Type.Name,
+                    TypeId = x.TypeId,
+                    Rating = x.Ratings.Count() == 0 ? 0.0 : x.Ratings.Average(r => r.RatingValue),
+                    ImgUrls = x.ImgUrls.Select(i => i.ImgUrl.Url).ToList(), // Convert to List<string>
+                    Quantity = x.Quantity,
+                    Color = x.Color.Name, // Use null-conditional operator in case Color is null
+                    Discount = new DiscountFormDTO
+                    {
+                        Name = x.Discount.Name,
+                        IsDiscount = x.Discount.IsDiscount,
+                        DiscountRate = x.Discount.DiscountRate,
+                        StartDate = x.Discount.StartDate,
+                        EndDate = x.Discount.EndDate
+                    }
+                }).FirstOrDefaultAsync();
+            if (product.Color == null || product.Color == "None")
+            {
+                return product;
+            }
+            var colors = await GetAllColorsForProductAsync(product.Make, product.Model, (int)product.TypeId);
+            product.Colors = colors;
+            return product;
+        }
+        //-------------Makes and Models
         public async Task<IEnumerable<string>> AllMakeNamesAsync()
         {
             IEnumerable<string> makes = await dbContext.Products
@@ -329,6 +367,16 @@ namespace ASNClub.Services.ProductServices
 
             return discountDTO;
         }
+        //-------------Color logic---------------
 
+        public async Task<List<ColorProductIdDTO>> GetAllColorsForProductAsync(string make, string model, int typeId)
+        {
+            return await dbContext.Products.Where(x => x.Make == make && x.Model == model && x.TypeId == typeId)
+                .Select(x => new ColorProductIdDTO
+                {
+                    ColorName = x.Color.Name,
+                    ProductId = x.Id
+                }).ToListAsync();
+        }
     }
 }
