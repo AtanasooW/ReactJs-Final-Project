@@ -16,7 +16,7 @@ const formInitialState = {
         startDate: null,
         endDate: null
     },
-    discountId: 0,
+    DiscountId: 0,
     description: '',
     quantity: '',
     categoryId: 0,
@@ -237,8 +237,8 @@ const formInitialState = {
                     <input type="date" id="discount.endDate" name="discount.endDate" value={formValues.discount.endDate} onChange={changeHandler}/><br/>
                   </div>
                   <div>
-                <label htmlFor="discountId">Discounts</label><br/>
-                <select id="discountId" name="discountId" onChange={changeHandler}>
+                <label htmlFor="DiscountId">Discounts</label><br/>
+                <select id="DiscountId" name="DiscountId" onChange={changeHandler}>
                 <option></option>
                   {formValues.discounts && formValues.discounts.map(discount => (
                     <option key={discount.id} value={discount.id}>{discount.name}</option>

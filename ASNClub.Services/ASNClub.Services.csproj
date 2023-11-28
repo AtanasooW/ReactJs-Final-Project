@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ASNClub.Data.Models\ASNClub.Data.Models.csproj" />
     <ProjectReference Include="..\ASNClub.Data\ASNClub.Data.csproj" />
     <ProjectReference Include="..\ASNClub.DTOs\ASNClub.DTOs.csproj" />
   </ItemGroup>
