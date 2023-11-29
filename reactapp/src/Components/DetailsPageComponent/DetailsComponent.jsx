@@ -2,7 +2,9 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
 import ApiUrl from "../../Common/Url";
 import styles from "./DetailsComponent.module.css"
-import {Button} from "react-bootstrap"
+import * as React from 'react';
+import Rating from '@mui/material/Rating';
+import Stack from '@mui/material/Stack';
 export default function DetailsComponent(){
     const [data, setData] = useState();
     const [quantity, setQuantity] = useState("0");
@@ -17,11 +19,11 @@ export default function DetailsComponent(){
 
     function StockStatus(quantity) {
         if (quantity >= 3) {
-          return <span style={{ color: "limegreen" }}>In stock</span>;
+          return <span style={{ color: "limegreen" }}><i class="fa-solid fa-check" style={{color: "limegreen"}}></i>In stock</span>;
         } else if (quantity > 0 && quantity < 3) {
           return <span style={{ color: "orange" }}>{quantity} in stock</span>;
         } else {
-          return <span style={{ color: "red" }}>Out of stock</span>;
+          return <span style={{ color: "red" }}><i class="fa-solid fa-x" style={{color: "red"}}></i>Out of stock</span>;
         }
     }
     function increaseQuantity(){
@@ -45,7 +47,7 @@ export default function DetailsComponent(){
     }
     console.log(data);
     return(
-        <div>
+        <div className={styles.container}>
             <div className={styles.imgsContainer}>
                 <div className={styles.bigImage}>
                     <img src={data !== undefined ? data.imgUrls[0] : null} alt="" />
@@ -57,58 +59,75 @@ export default function DetailsComponent(){
                 </div>
             </div>
                 {data !== undefined ? (
-                <div>
-
-                <div className={styles.infoContainer}>
-                    <h1 className={styles.productName}>{data.type} for {data.make} {data.model}</h1>
-                    <div className={styles.ratingContainer}>
-                        <div>
-                            {Array.from({ length: Math.floor(data.rating) }).map((_, index) => (
-                                <i key={index} className="fa fa-star"></i>
-                            ))}
-                            {data.rating % 1 !== 0 && <i className="fas fa-star-half-alt"></i>}
-                            {Array.from({ length: 5 - Math.ceil(data.rating) }).map((_, index) => (
-                                <i key={index} className="far fa-star"></i>
-                            ))}
+                <>
+                    <div className={styles.infoContainer}>
+                        <h1 className={styles.productName}>{data.type} for {data.make} {data.model}</h1>
+                        <div className={styles.ratingContainer}>
+                            <div>
+                                {Array.from({ length: Math.floor(data.rating) }).map((_, index) => (
+                                    <i key={index} className="fa fa-star"></i>
+                                ))}
+                                {data.rating % 1 !== 0 && <i className="fas fa-star-half-alt"></i>}
+                                {Array.from({ length: 5 - Math.ceil(data.rating) }).map((_, index) => (
+                                    <i key={index} className="far fa-star"></i>
+                                ))}
+                                <h4 className={styles.ratingValue}>{data.rating}</h4>
+                            </div>
+                            <p>
+                                <i class="fa-regular fa-circle fa-xs"></i>
+                            </p>
+                            <h4 className={styles.orders}><i class="fa-solid fa-basket-shopping fa-lg"></i>154 orders</h4>
                         </div>
-                        <h4>{data.rating}</h4>
-                        <p>
-                            <i class="fa-regular fa-circle fa-xs"></i>
-                        </p>
-                        <h4><i class="fa-solid fa-basket-shopping fa-lg"></i>154 orders</h4>
-                    </div>
-                    <div className={styles.isAvailable}>
-                        {StockStatus(data.quantity)}
-                    </div>
-                    {data.color != null ? (
-                        <div>
-                            <label htmlFor="">Color</label>
-                            <select name="color" id="color">
-                            <option key={data.color} value={data.id}>{data.color}</option>
-                            {data.colors.map(({ productId, colorName }) => (
-                                <option key={productId} value={productId}>
-                                    {colorName}
-                                </option>
-                            ))}
-                            </select>
+                        <div className={styles.isAvailable}>
+                            {StockStatus(data.quantity)}
                         </div>
-                    ) : null}
-                </div>
-                <div className={styles.checkOutCard}>
-                    {data.discount.isDiscount === true ? (
-                        <div>
-                            <h1 className={styles.price}>${data.price - ((data.price * data.discount.discountRate) / 100)}</h1>
-                            <h1 className={styles.oldPrice}>${data.price}</h1>
-                        </div>
-                    ) : (<h1 className={styles.price}>${data.price}</h1>)}
-                    <div>
-                        <h2>Quantity</h2>
-                        <Button onClick={decreaseQuantity}>-</Button>
-                        <input type="text" id="quantity" name="quantity" value={quantity} onChange={changeHandler}/>
-                        <Button onClick={increaseQuantity}>+</Button>
+                        {data.color != null ? (
+                            <div>
+                                <label htmlFor="">Color</label>
+                                <select name="color" id="color">
+                                <option key={data.color} value={data.id}>{data.color}</option>
+                                {data.colors.map(({ productId, colorName }) => (
+                                    <option key={productId} value={productId}>
+                                        {colorName}
+                                    </option>
+                                ))}
+                                </select>
+                            </div>
+                        ) : null}
                     </div>
-                </div>
-                </div>
+                    <div className={styles.checkOutCard}>
+                        {data.discount.isDiscount === true ? (
+                            <div>
+                                <h1 className={styles.price}>${(data.price - ((data.price * data.discount.discountRate) / 100)).toFixed(2)}</h1>
+                                <h1 className={styles.oldPrice}>${data.price.toFixed(2)}</h1>
+                            </div>
+                        ) : (<h1 className={styles.price}>${data.price.toFixed(2)}</h1>)}
+                        <p>Price per product</p>
+                        <div className={styles.quantityContainer}>
+                            <h2>Quantity:</h2>
+                            <div className={styles.quantityFunc}>
+                                <button onClick={decreaseQuantity}><i class="fa-solid fa-minus fa-xl"></i></button>
+                                <input type="text" id="quantity" name="quantity" value={quantity} onChange={changeHandler}/>
+                                <button onClick={increaseQuantity}><i class="fa-solid fa-plus fa-xl"></i></button>
+                            </div>
+                        </div>
+                        <div className={styles.btnsContainer}>
+                            <button className={styles.addToCardBtn}>Add to card</button>
+                            <button className={styles.buyNowBtn}>Buy now</button>
+                        </div>
+                        <div className={styles.test}>
+                            <label htmlFor="rating">Rating:</label>
+                            <Stack spacing={1}>
+                                <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                            </Stack>
+                        </div>
+                        <div>
+                            <p><i class="fa-solid fa-truck"></i> Worldwide shipping</p>
+                            <p><i class="fa-solid fa-shield"></i> Secure payment</p>
+                            <p><i class="fa-solid fa-medal"></i>2 years full warranty</p>
+                        </div>
+                    </div>
+                </>
                 ) : null}
         </div>
     )

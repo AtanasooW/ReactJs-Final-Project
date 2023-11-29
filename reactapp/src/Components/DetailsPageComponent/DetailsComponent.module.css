@@ -1,3 +1,131 @@
+.container{
+    margin: 2em 4em;
+    display: flex;
+    flex-direction: row;
+}
+.imgsContainer{
+    flex: 4;
+}
+.bigImage img{
+    max-width: 100%;
+    border-radius: 15px;
+    border: black 3px solid;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.smallImages {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+}
 .smallImages img{
-    max-width: 20%;
+    max-width: 18%;
+    border-radius: 10px;
+    border: black 2px solid;
+}
+.infoContainer{
+    margin-left: 3em;
+    flex:3;
+}
+.ratingContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ratingContainer div{
+    display:  flex;
+    flex-direction: row;
+    align-items: center;
+}
+.ratingContainer div i{
+    padding-bottom: 0.5em;
+}
+.ratingContainer p i{
+    padding-top: 2em;
+}
+.ratingValue{
+    margin-left: 0.5em;
+    margin-right: 1em;
+}
+.orders{
+    margin-left: 1em;
+}
+.orders i{
+    margin-right: 0.25em;
+}
+.isAvailable span{
+  font-size: 1.25em;
+  font-weight: 500;
+}
+.isAvailable span i{
+    margin-right: 0.25em;
+}
+.checkOutCard{
+    flex: 2;
+    padding: 2em;
+    background-color: #e8bd99;
+    border-radius: 15px;
+    border: black 3px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.checkOutCard p {
+    font-size: 1.25em;
+    font-weight: 500;
+    color: #7599cc;
+}
+.quantityContainer{
+    display:  flex;
+    flex-direction: row;
+    gap: 2.5em;
+    align-items: center;
+}
+.quantityFunc{
+    display: flex;
+    max-width: 40%;
+    max-height: 4em;
+    flex-direction: row;
+    align-items: center;
+    background-color: #d7455b;
+    border: black 3px solid;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.quantityFunc input{
+    margin-top: 0.5em;
+    font-size: 1.5em;
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+}
+.quantityFunc button{
+    padding: 1.15em 1em;
+    border: none;
+    background-color: transparent;
+}
+.btnsContainer{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.btnsContainer button{
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: 700;
+    border: black 3px solid;
+    border-radius: 15px;
+}
+.btnsContainer :first-child{
+    background-color: #305282;
+    color: white;
+}
+.btnsContainer :last-child{
+    background-color: #a9bfdf;
+    color: #305282;
+}
+.test{
+    width: 30%;
 }
