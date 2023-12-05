@@ -73,5 +73,20 @@ namespace webapi.Controllers
             }
             return Ok(model);
         }
+        public async Task<IActionResult> SetRating(int id, int ratingValue) // guid UserId
+        {
+            //var userId = User.GetId();
+            try
+            {
+                //await productService.AddRatingAsync(id, ratingValue, userId);
+                TempData["SuccessMessage"] = "You successfully rated a product";
+            }
+            catch (Exception e)
+            {
+                TempData["Error"] = e.Message;
+                return RedirectToAction("InternalServerError", "Error");
+            }
+            return Ok();
+        }
     }
 }

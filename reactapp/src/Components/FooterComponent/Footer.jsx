@@ -3,13 +3,12 @@ export default function Footer(){
     return(
 <div className={styles.content}>
     <section className={styles.container}>
-     <ul>
-       <li><a routerLink="/home">Homepage</a></li>
-     <li><a routerLink="/contacts">Contacts</a></li>
-     <li><a routerLink="/support">FAQ</a></li>
-     <li><a routerLink="/about">About</a></li>
-     <li><a routerLink="/terms&conditions">Terms&Conditions</a></li>
-   
+    <ul className={styles.footerInfo}>
+        <li><a routerLink="/home">Homepage</a></li>
+        <li><a routerLink="/contacts">Contacts</a></li>
+        <li><a routerLink="/support">FAQ</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/terms&conditions">Terms&Conditions</a></li>
    </ul>
  
    <ul className={styles.social}>

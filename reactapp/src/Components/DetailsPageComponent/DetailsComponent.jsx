@@ -17,7 +17,7 @@ export default function DetailsComponent(){
     useEffect(() => {
         fetch(`${ApiUrl}/api/Shop/Details?id=${params.id}`)
         .then(responese => responese.json())
-        .then(d => setData(d))
+        .then(d => (setData(d), setSelectedImage(d.imgUrls[0])))
     }, [params.id]);  
 
     function StockStatus(quantity) {
@@ -30,6 +30,8 @@ export default function DetailsComponent(){
         }
     }
     function increaseQuantity(){
+        console.log(quantity)
+
         setQuantity(state=> Number(state) + 1);
     }
     function changeHandler(e){
@@ -40,7 +42,12 @@ export default function DetailsComponent(){
             setQuantity(value)
         }
     }
+    function setRating(e) {
+        console.log(e.target.value)
+    }
     function decreaseQuantity(){
+        console.log(quantity)
+
         if(quantity <= 0){
             setQuantity(0);
         }
@@ -103,20 +110,20 @@ export default function DetailsComponent(){
                                 </select>
                             </div>
                         ) : null}
-                        <div>
+                        <div className={styles.infoList}>
                             <ul>
                                 <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
                                 <li>Sint totam molestiae dolorum laborum neque excepturi.</li>
-                                <li>Rem perferendis accusantium ea iste aliquam aperiam, obcaecati commodi quos ex, eligendi animi aliquid dignissimos.</li>
-                                <li></li>
+                                <li>Rem perferendis accusantium ea iste aliquam aperiam,</li>
+                                <li>obcaecati commodi quos ex, eligendi animi aliquid dignissimos.</li>
                             </ul>
                         </div>
                     </div>
                     <div className={styles.checkOutCard}>
                         {data.discount.isDiscount === true ? (
                             <div>
-                                <h1 className={styles.price}>${(data.price - ((data.price * data.discount.discountRate) / 100)).toFixed(2)}</h1>
-                                <h1 className={styles.oldPrice}>${data.price.toFixed(2)}</h1>
+                                <h1 className={styles.price}>${(data.price - ((data.price * data.discount.discountRate) / 100)).toFixed(2)}<span className={styles.oldPrice}>${data.price.toFixed(2)}</span></h1>
+                                
                             </div>
                         ) : (<h1 className={styles.price}>${data.price.toFixed(2)}</h1>)}
                         <p>Price per product</p>
@@ -135,7 +142,7 @@ export default function DetailsComponent(){
                         <div className={styles.ratingStars}>
                             <h4 className={styles.ratingLabel} htmlFor="rating">Rating:</h4>
                             <Stack spacing={1}>
-                                <Rating name="half-rating" defaultValue={0.5} precision={0.5} />
+                                <Rating name="half-rating" defaultValue={0.5} precision={0.5} onChange={setRating}/>
                             </Stack>
                         </div>
                         <div>

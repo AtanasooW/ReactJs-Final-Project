@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj": {}
+    "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj": {
+    "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj",
+        "projectUniqueName": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj",
         "projectName": "ASNClub.Common",
-        "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj",
-        "packagesPath": "C:\\Users\\Doroti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\obj\\",
+        "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj",
+        "packagesPath": "C:\\Users\\AtanasooW\\.nuget\\packages\\",
+        "outputPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Doroti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AtanasooW\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,21 +55,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj": {
+    "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj",
+        "projectUniqueName": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj",
         "projectName": "ASNClub.Data.Models",
-        "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj",
-        "packagesPath": "C:\\Users\\Doroti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\obj\\",
+        "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj",
+        "packagesPath": "C:\\Users\\AtanasooW\\.nuget\\packages\\",
+        "outputPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Doroti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AtanasooW\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj": {
-                "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj"
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj"
               }
             }
           }
@@ -120,21 +120,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj": {
+    "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj",
+        "projectUniqueName": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj",
         "projectName": "ASNClub.Data",
-        "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj",
-        "packagesPath": "C:\\Users\\Doroti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\obj\\",
+        "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj",
+        "packagesPath": "C:\\Users\\AtanasooW\\.nuget\\packages\\",
+        "outputPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Doroti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AtanasooW\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -148,8 +148,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj"
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj"
               }
             }
           }
@@ -189,21 +189,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj": {
+    "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj",
+        "projectUniqueName": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj",
         "projectName": "ASNClub.DTOs",
-        "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj",
-        "packagesPath": "C:\\Users\\Doroti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\obj\\",
+        "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj",
+        "packagesPath": "C:\\Users\\AtanasooW\\.nuget\\packages\\",
+        "outputPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Doroti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AtanasooW\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -217,8 +217,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj": {
-                "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj"
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj"
               }
             }
           }
@@ -254,21 +254,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj": {
+    "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj",
+        "projectUniqueName": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj",
         "projectName": "ASNClub.Services",
-        "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj",
-        "packagesPath": "C:\\Users\\Doroti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\obj\\",
+        "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj",
+        "packagesPath": "C:\\Users\\AtanasooW\\.nuget\\packages\\",
+        "outputPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Doroti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AtanasooW\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -282,14 +282,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj"
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj"
               },
-              "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj": {
-                "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj"
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj"
               },
-              "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj": {
-                "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj"
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj"
               }
             }
           }
@@ -325,21 +325,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj": {
+    "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj",
+        "projectUniqueName": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj",
-        "packagesPath": "C:\\Users\\Doroti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\webapi\\obj\\",
+        "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\webapi\\webapi.csproj",
+        "packagesPath": "C:\\Users\\AtanasooW\\.nuget\\packages\\",
+        "outputPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Doroti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AtanasooW\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -347,24 +347,24 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj": {
-                "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj"
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data.Models\\ASNClub.Data.Models.csproj"
               },
-              "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj": {
-                "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj"
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Data\\ASNClub.Data.csproj"
               },
-              "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj": {
-                "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj"
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.DTOs\\ASNClub.DTOs.csproj"
               },
-              "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj": {
-                "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\Front-End\\Project\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj"
+              "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj": {
+                "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\ReactJs-Final-Project\\ASNClub.Services\\ASNClub.Services.csproj"
               }
             }
           }
@@ -441,7 +441,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

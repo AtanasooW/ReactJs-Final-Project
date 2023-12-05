@@ -357,8 +357,31 @@ namespace ASNClub.Services.ProductServices
             product.Colors = colors;
             return product;
         }
+        //-------------Rating Logic
+        public async Task AddRatingAsync(int id, int ratingValue)//, string? userId
+        {
+            //if (dbContext.Ratings.Any(x => x.UserId == Guid.Parse(userId) && x.ProductId == id))
+            //{
+            //    throw new InvalidOperationException("Already rated");
+            //}
+            var rating = new Rating()
+            {
+                ProductId = id,
+                UserId = Guid.Parse(userId),
+                RatingValue = ratingValue
+            };
+            var product = await GetProductOfTypeProductByIdAsync(id);
+            if (product == null)
+            {
+                throw new InvalidOperationException("Product doesn't exist");
+            }
+            await dbContext.Ratings.AddAsync(rating);
+            product.Ratings.Add(rating);
+            await dbContext.SaveChangesAsync();
 
-        //-------------Makes and Models
+        }
+
+        //-------------Makes and Models Logic
         public async Task<IEnumerable<string>> AllMakeNamesAsync()
         {
             IEnumerable<string> makes = await dbContext.Products

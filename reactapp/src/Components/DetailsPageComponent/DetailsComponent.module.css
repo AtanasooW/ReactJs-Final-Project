@@ -77,7 +77,17 @@
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
+.infoList ul{
+    padding-top: 2em;
+    padding-left: 0;
+}
+.infoList ul li{
+    display:list-item;
+    color: darkgrey;
+    list-style-type: circle;
+    list-style-position: inside;
+    padding-bottom: 1em;
+}
 .checkOutCard{
     flex: 2;
     padding: 2em;
@@ -85,6 +95,12 @@
     border-radius: 15px;
     border: black 3px solid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.checkOutCard div h1 span{
+    font-size: 0.65em;
+    margin-left: 1em;
+    text-decoration:line-through;
+    color:rgb(112, 112, 112)
 }
 .checkOutCard p {
     font-size: 1.25em;
@@ -99,7 +115,7 @@
 }
 .quantityFunc{
     display: flex;
-    max-width: 40%;
+    max-width: 47%;
     max-height: 4em;
     flex-direction: row;
     align-items: center;
@@ -138,11 +154,18 @@
 .btnsContainer :first-child{
     background-color: #305282;
     color: white;
-
+}
+.btnsContainer :first-child:hover{
+    background-color: #5486cc;
+    transform: scale(1.05);
 }
 .btnsContainer :last-child{
     background-color: #a9bfdf;
     color: #305282;
+}
+.btnsContainer :last-child:hover{
+    background-color: #d0e1fc;
+    transform: scale(1.05);
 }
 .ratingStars{
     width: 45%;
