@@ -40,6 +40,17 @@ const formInitialState = {
     const[images,setImages] = useState([]);
     const[formValues,setFormValues] = useState(formInitialState)
 
+    var check = JSON.parse(localStorage.getItem('currentUser')); //IsUser
+    if( check !== null) {
+      var userRole = JSON.parse(localStorage.getItem('UserRole'));
+      if(userRole !== "Moderator"){
+        navigate("/")
+      }
+    } 
+    else{
+      navigate("/")
+    }
+    
     useEffect(() => {
       fetch(`${ApiUrl}/api/product/Update?id=${params.id}`)
       .then(responese => responese.json())

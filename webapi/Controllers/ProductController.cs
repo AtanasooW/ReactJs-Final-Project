@@ -104,7 +104,7 @@ namespace webapi.Controllers
             return StatusCode(200);
         }
 
-        [HttpPost("Delete")]
+        [HttpGet("Delete")]
         public async Task<IActionResult> DeleteProduct(int productId)
         {
             await productService.DeleteProductAsync(productId);

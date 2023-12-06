@@ -8,6 +8,7 @@ import CreateProduct from './Components/CreateProductComponent/CreateProduct';
 import UpdateProduct from './Components/UpdateProductComponent/UpdateProduct';
 import DetailsComponent from './Components/DetailsPageComponent/DetailsComponent';
 import SingUp from './Components/SingUpComponent/SingUp';
+import SingIn from './Components/SingInComponent/SingIn';
 
 export default function App() {
     return(
@@ -21,6 +22,7 @@ export default function App() {
                     <Route path="/createProduct" element={<CreateProduct/>}/>
                     <Route path="/updateProduct/:id" element={<UpdateProduct/>}/>
                     <Route path="/singup" element={<SingUp/>}/>
+                    <Route path="/singin" element={<SingIn/>}/>
                 </Routes>
             </main>
             <Footer/>

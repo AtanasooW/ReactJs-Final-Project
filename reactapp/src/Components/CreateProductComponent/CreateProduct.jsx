@@ -33,6 +33,16 @@ export default function CreateProduct(){
   const[urls,setUrls] = useState([]);
   const[images,setImages] = useState([]);
 
+  var check = JSON.parse(localStorage.getItem('currentUser')); //IsUser
+  if( check !== null) {
+    var userRole = JSON.parse(localStorage.getItem('UserRole'));
+    if(userRole !== "Moderator"){
+      navigate("/")
+    }
+  } 
+  else{
+    navigate("/")
+  }
   useEffect(() => {
         fetch(`${ApiUrl}/api/product/Create`)
         .then(responese => responese.json())

@@ -25,16 +25,5 @@ namespace ASNClub.Data.Models.Product
         [ForeignKey("Product")]
         public int ProductId { get; set; }
         public Product Product { get; set; } = null!;
-
-        [Required]
-        [ForeignKey("Comment")]
-        public Guid CommentId { get; set; }
-        public Comment Comment { get; set; } = null!;
-
-        [Required]
-        public DateTime RatedOn { get; set; }
-        public ICollection<Like> Likes { get; set; } = new HashSet<Like>();
-
-
     }
 }

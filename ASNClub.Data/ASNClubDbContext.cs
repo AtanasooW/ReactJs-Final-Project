@@ -48,12 +48,7 @@ public class ASNClubDbContext : IdentityDbContext<ApplicationUser, IdentityRole<
 
         Assembly configAssembly = Assembly.GetAssembly(typeof(ASNClubDbContext)) ??
                                   Assembly.GetExecutingAssembly();
-        builder.ApplyConfigurationsFromAssembly(configAssembly);
-        builder.Entity<Like>()
-               .HasOne(l => l.Rating)
-               .WithMany(r => r.Likes)
-               .HasForeignKey(l => l.RatingId)
-               .OnDelete(DeleteBehavior.NoAction); // Enable cascade delete for Like entities related to Rating
+        builder.ApplyConfigurationsFromAssembly(configAssembly); // Enable cascade delete for Like entities related to Rating
 
         base.OnModelCreating(builder);
         // Customize the ASP.NET Identity model and override the defaults if needed.

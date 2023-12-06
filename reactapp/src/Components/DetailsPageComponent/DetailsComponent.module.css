@@ -90,6 +90,7 @@
 }
 .checkOutCard{
     flex: 2;
+    max-width: 80%;
     padding: 2em;
     background-color: #e8bd99;
     border-radius: 15px;
@@ -115,7 +116,7 @@
 }
 .quantityFunc{
     display: flex;
-    max-width: 47%;
+    max-width: 27%;
     max-height: 4em;
     flex-direction: row;
     align-items: center;
@@ -126,6 +127,7 @@
 
 }
 .quantityFunc input{
+    max-width: 23%;
     margin-top: 0.5em;
     font-size: 1.5em;
     border-radius: 0;
@@ -151,24 +153,31 @@
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.btnsContainer :first-child{
+.addToCardBtn{
     background-color: #305282;
     color: white;
 }
-.btnsContainer :first-child:hover{
+.addToCardBtn:hover{
     background-color: #5486cc;
     transform: scale(1.05);
 }
-.btnsContainer :last-child{
+.buyNowBtn{
     background-color: #a9bfdf;
-    color: #305282;
+    color: #08254d;
 }
-.btnsContainer :last-child:hover{
+.buyNowBtn:hover{
     background-color: #d0e1fc;
     transform: scale(1.05);
 }
+.deleteProduct{
+    background-color: #cf2c44;
+}
+.deleteProduct:hover{
+    background-color: #f17386;
+    transform: scale(1.05);
+}
 .ratingStars{
-    width: 45%;
+    width: 30%;
 }
 .ratingStars label{
     font-size: 1.5em;

@@ -13,17 +13,16 @@ export default function SingUp(){
     const[formValues,setFormValues] = useState(formInitialState)
     const navigate = useNavigate();
 
-
     var check = JSON.parse(localStorage.getItem('currentUser')); //IsUser
     if( check !== null) {
         navigate("/")
     } 
 
-const createAccount = async (event) => {
-    event.preventDefault() 
-
+  async function SubmitForm(e) {
+      e.preventDefault() 
+    console.log(e.target)
     try {
-        const response = await fetch(`${ApiUrl}/accounts/register`, {
+        const response = await fetch(`${ApiUrl}/api/accounts/Register`, {
           method: 'POST',
           headers: {
             'Accept': 'application/json',
@@ -34,7 +33,7 @@ const createAccount = async (event) => {
     
         console.log("After fetch");
     
-        if (response.status !== 200) {
+        if (response.status !== 201) {
           console.log(response.status);
           if(formValues.password !== formValues.confirmPassword) {
             alert("Passwords must match!")
@@ -54,7 +53,7 @@ const createAccount = async (event) => {
           console.error('Error during registration:', error);
         }
       } 
-};
+  }
     const changeHandler = (e) => {
         let value = e.target.value;
         console.log(value);
@@ -74,7 +73,7 @@ const createAccount = async (event) => {
         <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col-12 col-md-8 col-lg-6 col-xl-5" >
                 <div className="card bg-dark text-white">
-                    <form id="registerForm" >
+                    <form type="Post" onSubmit={SubmitForm}>
                         <div className="card-body p-5 text-center">
 
                             <div className="mb-md-5 mt-md-4 pb-5">
@@ -82,7 +81,7 @@ const createAccount = async (event) => {
                                 <h2 className="fw-bold mb-2 text-uppercase">Sign up</h2>
                                 <p className="text-white-50 mb-5">Please enter your login and password and confirm passoword!</p>
 
-                                <form onSubmit={createAccount}>     
+                                 
                                 <div className="form-outline form-white mb-4">
                                     <input type="username" id="username" name="username" className="form-control form-control-lg" aria-required="true" value={formValues.username} onChange={changeHandler} />
                                     <label htmlFor="username" className="form-label" for="typeEmailX">Username</label>
@@ -107,7 +106,7 @@ const createAccount = async (event) => {
                                 </div>
                                 
                                 <button id="registerSubmit" className="btn btn-outline-light btn-lg px-5" type="submit">Sign up</button>
-                                </form>
+                              
                                 <div className="d-flex justify-content-center text-center mt-4 pt-1">
                                     <a href="#!" className="text-white"><i className="fab fa-facebook-f fa-lg"></i></a>
                                     <a href="#!" className="text-white"><i className="fab fa-twitter fa-lg mx-4 px-2"></i></a>

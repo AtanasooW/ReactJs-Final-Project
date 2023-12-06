@@ -49,16 +49,17 @@ namespace ASNClub.Services.ProductServices
             {
                 products = products.Where(x => x.Model == queryModel.Model);
             }
-            if (!string.IsNullOrWhiteSpace(queryModel.SearchString)) //TO DO Search bar is worikng with only one word fix that 
-            {
-                string[] searchStrings = queryModel.SearchString.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-                string wildCardForMake = $"%{searchStrings[0].ToLower()}%";
-                string wildCardForModel = $"%{searchStrings[1].ToLower()}%";
+            //if (!string.IsNullOrWhiteSpace(queryModel.SearchString)) //TO DO Search bar is worikng with only one word fix that 
+            //{
+            //    string[] searchStrings = queryModel.SearchString.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+            //    string wildCardForMake = $"%{searchStrings[0].ToLower()}%";
+            //    string wildCardForModel = $"%{searchStrings[1].ToLower()}%";
 
-                products = products
-                    .Where(h => EF.Functions.Like(h.Make.ToLower(), wildCardForMake) &&
-                                EF.Functions.Like(h.Model.ToLower(), wildCardForModel));
-            }
+            //    products = products
+            //        .Where(h => EF.Functions.Like(h.Make.ToLower(), wildCardForMake) &&
+            //                    EF.Functions.Like(h.Model.ToLower(), wildCardForModel));
+            //}
+
             products = queryModel.ProductSorting switch
             {
                 ProductSorting.PriceAscending => products.OrderBy(x => x.Price),
@@ -70,8 +71,8 @@ namespace ASNClub.Services.ProductServices
 
             IEnumerable<AllProductDTO> allProducts = await products
                 .AsNoTracking()
-                .Skip((queryModel.CurrentPage - 1) * queryModel.ProductsPerPage)
-                .Take(queryModel.ProductsPerPage)
+                //.Skip((queryModel.CurrentPage - 1) * queryModel.ProductsPerPage)
+                //.Take(queryModel.ProductsPerPage)
                 .Select(p => new AllProductDTO
                 {
                     Id = p.Id.ToString(),
@@ -180,11 +181,6 @@ namespace ASNClub.Services.ProductServices
             dbContext.Discounts.Remove(await dbContext.Discounts.Where(x => x.Id == product.DiscountId).FirstAsync());
             dbContext.ImgUrls.RemoveRange(product.ImgUrls.Select(x => x.ImgUrl));
             dbContext.ProductsImgUrls.RemoveRange(product.ImgUrls);
-            foreach (var rating in product.Ratings)
-            {
-                dbContext.Likes.RemoveRange(rating.Likes);
-            }
-            dbContext.Comments.RemoveRange(product.Ratings.Select(x => x.Comment));
             dbContext.Ratings.RemoveRange(product.Ratings);
             dbContext.Products.Remove(product);
             await dbContext.SaveChangesAsync();
@@ -358,16 +354,16 @@ namespace ASNClub.Services.ProductServices
             return product;
         }
         //-------------Rating Logic
-        public async Task AddRatingAsync(int id, int ratingValue)//, string? userId
+        public async Task AddRatingAsync(int id, int ratingValue, string userId)//, string? userId
         {
-            //if (dbContext.Ratings.Any(x => x.UserId == Guid.Parse(userId) && x.ProductId == id))
-            //{
-            //    throw new InvalidOperationException("Already rated");
-            //}
+            if (dbContext.Ratings.Any(x => x.UserId == Guid.Parse(userId) && x.ProductId == id))
+            {
+                throw new InvalidOperationException("Already rated");
+            }
             var rating = new Rating()
             {
                 ProductId = id,
-                //UserId = Guid.Parse(userId),
+                UserId = Guid.Parse(userId),
                 RatingValue = ratingValue
             };
             var product = await GetProductOfTypeProductByIdAsync(id);

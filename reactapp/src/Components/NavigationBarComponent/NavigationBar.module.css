@@ -49,6 +49,21 @@
     text-decoration: underline;
     color: #DA957E;
 }
+.h4ForName{
+    margin-left: 1em;
+}
+.spanForName{
+    font-size: 0.75em;
+    color: white;
+    margin-right: 1em;
+}
+.logoutBtn{
+    padding: 0.25em 1em;
+    border: black 2px solid;
+    border-radius: 5px;
+    background-color: #cf2c44;
+    font-weight: 400;
+}
 .userContainer{
     display: flex;
     margin-right: 2em;

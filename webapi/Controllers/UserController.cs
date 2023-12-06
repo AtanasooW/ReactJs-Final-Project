@@ -11,11 +11,13 @@ using System.IdentityModel.Tokens.Jwt;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using ASNClub.Common;
+using Microsoft.AspNetCore.Cors;
 
 namespace webapi.Controllers
 {
     [Route("api/accounts")]
     [ApiController]
+    [EnableCors("AllowOrigin")]
     public class UserController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
@@ -37,7 +39,7 @@ namespace webapi.Controllers
             _config = config;
             _roleManager = roleManager;
         }
-        [HttpPost("Registration")]
+        [HttpPost("Register")]
         public async Task<IActionResult> RegisterUser([FromBody] UserForRegistrationDTO userForRegistration)
         {
             if (userForRegistration == null || !ModelState.IsValid)

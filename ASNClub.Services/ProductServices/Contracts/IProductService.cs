@@ -17,6 +17,8 @@ namespace ASNClub.Services.ProductServices.Contracts
         public Task DeleteProductAsync(int productId);
         public Task EditProductAsync(ProductFormDTO productDTO);
         public Task<ProductDetailsDTO?> GetProductDetailsByIdAsync(int productId);
+        public Task AddRatingAsync(int id, int ratingValue, string userId);
+
         public Task<IEnumerable<string>> AllMakeNamesAsync();
         public Task<IEnumerable<string>> AllModelNamesAsync(string make);
         public Task<ProductFormDTO> GetProductForEditAsync(int productId);

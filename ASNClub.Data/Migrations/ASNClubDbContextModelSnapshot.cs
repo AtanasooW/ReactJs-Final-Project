@@ -504,14 +504,8 @@ namespace ASNClub.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("CommentId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
-
-                    b.Property<DateTime>("RatedOn")
-                        .HasColumnType("datetime2");
 
                     b.Property<double>("RatingValue")
                         .HasColumnType("float");
@@ -520,8 +514,6 @@ namespace ASNClub.Data.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CommentId");
 
                     b.HasIndex("ProductId");
 
@@ -772,9 +764,9 @@ namespace ASNClub.Data.Migrations
             modelBuilder.Entity("ASNClub.Data.Models.Product.Like", b =>
                 {
                     b.HasOne("ASNClub.Data.Models.Product.Rating", "Rating")
-                        .WithMany("Likes")
+                        .WithMany()
                         .HasForeignKey("RatingId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ASNClub.Data.Models.ApplicationUser", "UserLike")
@@ -842,12 +834,6 @@ namespace ASNClub.Data.Migrations
 
             modelBuilder.Entity("ASNClub.Data.Models.Product.Rating", b =>
                 {
-                    b.HasOne("ASNClub.Data.Models.Product.Comment", "Comment")
-                        .WithMany()
-                        .HasForeignKey("CommentId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("ASNClub.Data.Models.Product.Product", "Product")
                         .WithMany("Ratings")
                         .HasForeignKey("ProductId")
@@ -859,8 +845,6 @@ namespace ASNClub.Data.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Comment");
 
                     b.Navigation("Product");
 
@@ -933,11 +917,6 @@ namespace ASNClub.Data.Migrations
                     b.Navigation("ImgUrls");
 
                     b.Navigation("Ratings");
-                });
-
-            modelBuilder.Entity("ASNClub.Data.Models.Product.Rating", b =>
-                {
-                    b.Navigation("Likes");
                 });
 #pragma warning restore 612, 618
         }

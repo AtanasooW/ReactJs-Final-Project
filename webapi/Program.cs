@@ -17,25 +17,20 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json.Serialization;
-using System.Configuration;
 using System.Text;
-using ConfigurationManager = Microsoft.Extensions.Configuration.ConfigurationManager;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 ConfigurationManager config = builder.Configuration;
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
-    ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+var connectionString = builder.Configuration.GetConnectionString("ConnectionStringDef") 
+    ?? throw new InvalidOperationException("Connection string 'ConnectionStringDef' not found.");
 
 builder.Services.AddDbContext<ASNClubDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
 });
+
 builder.Configuration.AddJsonFile("appsettings.json");
-builder.Services.AddScoped<IUserServices, UserServices>();
-builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<IColorService, ColorService>();
-builder.Services.AddScoped<ITypeService, TypeService>();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole<Guid>>()
     .AddRoles<IdentityRole<Guid>>()
@@ -61,9 +56,14 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:SecretKey"]))
     };
 });
- 
-builder.Services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling
-= Newtonsoft.Json.ReferenceLoopHandling.Ignore).AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+builder.Services.AddControllers();
+
+builder.Services.AddScoped<IUserServices, UserServices>();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IColorService, ColorService>();
+builder.Services.AddScoped<ITypeService, TypeService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

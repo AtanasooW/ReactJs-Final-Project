@@ -11,6 +11,12 @@ export default function DetailsComponent(){
     const [selectedImage, setSelectedImage] = useState(null); 
     const navigate = useNavigate();
 
+    var userRole = JSON.parse(localStorage.getItem("UserRole"));
+    var check = JSON.parse(localStorage.getItem('currentUser')); //IsUser
+    if( check === null) {
+        navigate("/")
+    } 
+
     const params = useParams();
     console.log(params)
 
@@ -42,8 +48,15 @@ export default function DetailsComponent(){
             setQuantity(value)
         }
     }
-    function setRating(e) {
+    async function setRating(e) {
         console.log(e.target.value)
+        const response = await fetch(`${ApiUrl}/api/Shop/Rating?id=${data.id}&ratingValue=${e.target.value}&userId=${check.id}`);
+          if(response.status === 200){
+            navigate(`/shop/${data.id}`);
+          }
+          else{
+            console.error("Error ocures while rating")
+          }
     }
     function decreaseQuantity(){
         console.log(quantity)
@@ -60,6 +73,15 @@ export default function DetailsComponent(){
     }
     function changeColor(e){
         navigate(`/shop/${e.target.value}`)
+    }
+    async function deleteProduct() {
+        const response = await fetch(`${ApiUrl}/api/product/Delete?productId=${data.id}`);
+          if(response.status === 200){
+            navigate("/");
+          }
+          else{
+            console.error("Error ocures while deleting")
+          }
     }
     console.log(data);
     return(
@@ -131,13 +153,16 @@ export default function DetailsComponent(){
                             <h2>Quantity:</h2>
                             <div className={styles.quantityFunc}>
                                 <button onClick={decreaseQuantity}><i class="fa-solid fa-minus fa-xl"></i></button>
-                                <input type="text" id="quantity" name="quantity" value={quantity} onChange={changeHandler}/>
+                                <input className={styles.quantityInput} type="text" id="quantity" name="quantity" value={quantity} onChange={changeHandler}/>
                                 <button onClick={increaseQuantity}><i class="fa-solid fa-plus fa-xl"></i></button>
                             </div>
                         </div>
                         <div className={styles.btnsContainer}>
                             <button className={styles.addToCardBtn}>Add to card</button>
                             <button className={styles.buyNowBtn}>Buy now</button>
+                            {userRole === "Moderator" ? (
+                              <button className={styles.deleteProduct} onClick={deleteProduct}>Delete</button>
+                              ) : (null)}
                         </div>
                         <div className={styles.ratingStars}>
                             <h4 className={styles.ratingLabel} htmlFor="rating">Rating:</h4>

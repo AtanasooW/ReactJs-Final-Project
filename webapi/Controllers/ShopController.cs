@@ -13,7 +13,6 @@ namespace webapi.Controllers
 {
     [ApiController]
     [Route("api/Shop")]
-    [EnableCors("AllowOrigin")]
     public class ShopController : Controller
     {
         private readonly IProductService productService;
@@ -31,7 +30,7 @@ namespace webapi.Controllers
             this.typeService = _typeService;
         }
         [HttpGet("All")]
-        public async Task<AllProductQueryModel> GetAllProducts(string? make,
+        public async Task<IActionResult> GetAllProducts(string? make,
             string? model,
             string? type,
             string? category,
@@ -61,7 +60,7 @@ namespace webapi.Controllers
             {
                 queryModel.Models = await productService.AllModelNamesAsync(queryModel.Make);
             }
-            return queryModel;
+            return Ok(queryModel);
         }
         [HttpGet("Details")]
         public async Task<IActionResult> Details(int id)
@@ -73,21 +72,18 @@ namespace webapi.Controllers
             }
             return Ok(model);
         }
-        [HttpPost("Rating")]
-        public async Task<IActionResult> SetRating(int id, int ratingValue) // guid UserId
+        [HttpGet("Rating")]
+        public async Task<IActionResult> SetRating(int id, int ratingValue, string userId) // guid UserId
         {
-            //var userId = User.GetId();
             try
             {
-                //await productService.AddRatingAsync(id, ratingValue, userId);
-                TempData["SuccessMessage"] = "You successfully rated a product";
+                await productService.AddRatingAsync(id, ratingValue, userId);
+                return Ok();
             }
             catch (Exception e)
             {
-                TempData["Error"] = e.Message;
-                return RedirectToAction("InternalServerError", "Error");
+                return BadRequest("Error ocures while rating" + e.Message);
             }
-            return Ok();
         }
     }
 }
