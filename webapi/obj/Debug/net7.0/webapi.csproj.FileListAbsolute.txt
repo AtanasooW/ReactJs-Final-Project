@@ -1064,3 +1064,7 @@ C:\Kaufland\Programming\ReactProject\ReactJs-Final-Project\webapi\obj\Debug\net7
 C:\Kaufland\Programming\ReactProject\ReactJs-Final-Project\webapi\obj\Debug\net7.0\webapi.pdb
 C:\Kaufland\Programming\ReactProject\ReactJs-Final-Project\webapi\obj\Debug\net7.0\webapi.genruntimeconfig.cache
 C:\Kaufland\Programming\ReactProject\ReactJs-Final-Project\webapi\obj\Debug\net7.0\ref\webapi.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\webapi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\webapi\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\webapi\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Doroti\Desktop\Atanas\Front-End\Project\ReactProject\ReactJs-Final-Project\webapi\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

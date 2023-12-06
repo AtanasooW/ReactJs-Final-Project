@@ -367,7 +367,7 @@ namespace ASNClub.Services.ProductServices
             var rating = new Rating()
             {
                 ProductId = id,
-                UserId = Guid.Parse(userId),
+                //UserId = Guid.Parse(userId),
                 RatingValue = ratingValue
             };
             var product = await GetProductOfTypeProductByIdAsync(id);

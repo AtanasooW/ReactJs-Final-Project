@@ -7,6 +7,7 @@ import ShopComponent from './Components/ShopPageComponent/ShopComponent';
 import CreateProduct from './Components/CreateProductComponent/CreateProduct';
 import UpdateProduct from './Components/UpdateProductComponent/UpdateProduct';
 import DetailsComponent from './Components/DetailsPageComponent/DetailsComponent';
+import SingUp from './Components/SingUpComponent/SingUp';
 
 export default function App() {
     return(
@@ -19,6 +20,7 @@ export default function App() {
                     <Route path="/shop/:id" element={<DetailsComponent/>}/>
                     <Route path="/createProduct" element={<CreateProduct/>}/>
                     <Route path="/updateProduct/:id" element={<UpdateProduct/>}/>
+                    <Route path="/signup" element={<SingUp/>}/>
                 </Routes>
             </main>
             <Footer/>

@@ -16,10 +16,13 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using Newtonsoft.Json.Serialization;
 using System.Configuration;
 using System.Text;
+using ConfigurationManager = Microsoft.Extensions.Configuration.ConfigurationManager;
 
 var builder = WebApplication.CreateBuilder(args);
+ConfigurationManager config = builder.Configuration;
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 
@@ -27,6 +30,7 @@ builder.Services.AddDbContext<ASNClubDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
 });
+builder.Configuration.AddJsonFile("appsettings.json");
 builder.Services.AddScoped<IUserServices, UserServices>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IColorService, ColorService>();
@@ -39,15 +43,27 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole<Guid>>()
     .AddDefaultTokenProviders();
 
 // Add services to the container.
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.SaveToken = true;
+    options.RequireHttpsMetadata = false;
+    options.TokenValidationParameters = new TokenValidationParameters()
     {
-        // Configure cookie options
-        options.Cookie.Name = "YourAppCookie";
-        options.LoginPath = "/Account/Login"; // Redirect to login page if not authenticated
-        // ...
-    });
-builder.Services.AddControllers();
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidAudience = config["JWT:ValidAudience"],
+        ValidIssuer = config["JWT:ValidIssuer"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["JWT:SecretKey"]))
+    };
+});
+ 
+builder.Services.AddControllers().AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling
+= Newtonsoft.Json.ReferenceLoopHandling.Ignore).AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

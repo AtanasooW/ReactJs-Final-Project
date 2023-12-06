@@ -7,6 +7,10 @@ using System.Security.Claims;
 using ASNClub.Services.UserServices.Contracts;
 using webapi.Areas.Identity.Pages.Account;
 using ASNClub.DTOs.User;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using ASNClub.Common;
 
 namespace webapi.Controllers
 {
@@ -17,11 +21,21 @@ namespace webapi.Controllers
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IUserServices _userServices;
         private readonly ILogger<LoginModel> _logger;
-        public UserController(UserManager<ApplicationUser> userManager, IUserServices userServices, ILogger<LoginModel> logger)
+        private readonly IConfiguration _config;
+        private readonly RoleManager<IdentityRole<Guid>> _roleManager;
+        public UserController(UserManager<ApplicationUser> userManager,
+            IUserServices userServices,
+            ILogger<LoginModel> logger,
+            IConfiguration config,
+            RoleManager<IdentityRole<Guid>> roleManager
+            )
+
         {
             _userManager = userManager;
             _userServices = userServices;
-            _logger=logger;
+            _logger = logger;
+            _config = config;
+            _roleManager = roleManager;
         }
         [HttpPost("Registration")]
         public async Task<IActionResult> RegisterUser([FromBody] UserForRegistrationDTO userForRegistration)
@@ -39,7 +53,7 @@ namespace webapi.Controllers
             var result = await _userManager.CreateAsync(user, userForRegistration.Password);
             if (!result.Succeeded)
             {
-                return HandleErrors(result);
+                return BadRequest("Result unsuccessful");
             }
 
             return StatusCode(201);
@@ -49,58 +63,91 @@ namespace webapi.Controllers
         {
             if (userForRegistration == null || !ModelState.IsValid)
                 return BadRequest();
-            var user = await _userServices.GetUserByEmail(userForRegistration.Email);
-            if (user == null)
+            var user = await _userManager.FindByEmailAsync(userForRegistration.Email);
+            if (user != null && await _userManager.CheckPasswordAsync(user, userForRegistration.Password))
             {
-                return NotFound("User not found");
-            }
-            var passwordIsValid = await _userManager.CheckPasswordAsync(user, userForRegistration.Password);
-
-            if (passwordIsValid)
-            {
-                var claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Name, user.UserName),
-            // Add other claims as needed
-        };
-
-                var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
-                var authProperties = new AuthenticationProperties
+                var userRoles = await _userManager.GetRolesAsync(user);
+                var Claims = new List<Claim>
                 {
-                    ExpiresUtc = DateTimeOffset.UtcNow.AddHours(8),
-
-                    // Allow session cookies to be persistent (stored between browser sessions)
-                    IsPersistent = true,
-
-                    // Set the cookie path (optional, defaults to '/')
-                    RedirectUri = "/",
+                    new Claim(ClaimTypes.Name, user.UserName),
+                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 };
-
-                await HttpContext.SignInAsync(
-                    CookieAuthenticationDefaults.AuthenticationScheme,
-                    new ClaimsPrincipal(claimsIdentity),
-                    authProperties);
-
-                // Redirect to a protected resource or return a success response
-                return Ok(new { Message = "Login successful" });
+                foreach (var item in userRoles)
+                {
+                    Claims.Add(new Claim(ClaimTypes.Role, item));
+                }
+                var token = GetJWTToken(Claims);
+                return Ok((new
+                {
+                    token = new JwtSecurityTokenHandler().WriteToken(token)
+                }));
             }
-            else
+            return Unauthorized();
+
+        }
+        [HttpPost]
+        [Route("RegisterMod")]
+        public async Task<IActionResult> RegisterMod([FromBody] UserForRegistrationDTO model)
+        {
+            var userExists = await _userManager.FindByNameAsync(model.UserName);
+            if (userExists != null)
+                return StatusCode(StatusCodes.Status500InternalServerError);
+
+            ApplicationUser user = new()
             {
-                return Unauthorized(new { message = "Invalid login credentials" });
+                Email = model.Email,
+                SecurityStamp = Guid.NewGuid().ToString(),
+                UserName = model.UserName
+            };
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if (!result.Succeeded)
+                return StatusCode(StatusCodes.Status500InternalServerError);
+
+            if (!await _roleManager.RoleExistsAsync(UserRoles.Moderator))
+                await _roleManager.CreateAsync(new IdentityRole<Guid>(UserRoles.Moderator));
+            if (!await _roleManager.RoleExistsAsync(UserRoles.User))
+                await _roleManager.CreateAsync(new IdentityRole<Guid>(UserRoles.User));
+
+            if (await _roleManager.RoleExistsAsync(UserRoles.Moderator))
+            {
+                await _userManager.AddToRoleAsync(user, UserRoles.Moderator);
             }
-           
+            if (await _roleManager.RoleExistsAsync(UserRoles.Moderator))
+            {
+                await _userManager.AddToRoleAsync(user, UserRoles.User);
+            }
+            return Ok();
         }
-        [HttpPost("Logout")]
-        public async Task<IActionResult> LogOutUser()
+        [HttpGet("GetUser")]
+        public async Task<IActionResult> GetUser(string username)
         {
-            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return Ok(new { Message = "Logout successful" });
+            var user = await _userServices.GetUserByUsername(username);
+            if (await _userManager.IsInRoleAsync(user, "Moderator"))
+            {
+                return Ok(new { user, Role = "Moderator" });
+            }
+
+            return Ok(new { user, Role = "User" });
         }
-        private IActionResult HandleErrors(IdentityResult result)
+        private JwtSecurityToken GetJWTToken(List<Claim> claims)
         {
-            var errors = result.Errors.Select(e => e.Description);
-            return BadRequest(new RegistrationResponseDTO { Errors = errors });
+            var issuer = _config["JWT:ValidIssuer"];
+            var audience = _config["JWT:ValidAudience"];
+            var key = _config["JWT:SecretKey"];
+            if (string.IsNullOrEmpty(issuer) || string.IsNullOrEmpty(audience) || string.IsNullOrEmpty(key)) {
+                throw new ArgumentException();
+            }
+            var SigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
+            var jwt = new JwtSecurityToken(
+                  issuer: issuer,
+                  audience: audience,
+                  expires: DateTime.Now.AddHours(3),
+                  claims: claims,
+                  signingCredentials: new SigningCredentials(SigningKey, SecurityAlgorithms.HmacSha256)
+                );
+            return jwt;
+            
         }
+
     }
 }
