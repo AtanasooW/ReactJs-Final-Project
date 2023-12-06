@@ -32,18 +32,22 @@ const formInitialState = {
     const params = useParams();
     const navigate = useNavigate();
 
-    const[checkedDiscount, setChekedDiscount] = useState(false);
-    const[checkedColor, setChekedColor] = useState(false);
-    const [file, setFile] = useState([]);//fileInitialState
     const[urls,setUrls] = useState([]);
+    const[checkedDiscount, setChekedDiscount] = useState(false);
+    const[checkedColor, setCheckedColor] = useState(false);
+    const[startDateHelper, setStartDateHelper] = useState("");
+    const [file, setFile] = useState([]);//fileInitialState
     const[images,setImages] = useState([]);
     const[formValues,setFormValues] = useState(formInitialState)
 
     useEffect(() => {
-        fetch(`${ApiUrl}/api/product/Update?id=${params.id}`)
-        .then(responese => responese.json())
-        .then(d => {setFormValues(d);
-             setFile(d.imgUrls);})
+      fetch(`${ApiUrl}/api/product/Update?id=${params.id}`)
+      .then(responese => responese.json())
+      .then(d => {setFormValues(d);
+        setFile(d.imgUrls);
+        onLoadColor(d.colorId);
+        onLoadDiscount(d.discount.isDiscount, d.discount.startDate);
+      })
     }, []);
 
     const changeHandler = (e) => {
@@ -63,12 +67,30 @@ const formInitialState = {
           }));
         }
     };
+    function onLoadDiscount(isDiscount, startDate) {
+      if(isDiscount){
+        const tempObject = new Date(startDate);
+        console.log(tempObject);
+        const isoDateString = tempObject.toISOString().split('T')[0];
+        console.log(isoDateString);
+        setStartDateHelper(isoDateString);
+        document.getElementById("discountCheckbox").click();
+        DiscountChange();
+      }
+    }
     function DiscountChange(){
         formValues.discount.isDiscount = !checkedDiscount
         setChekedDiscount(!checkedDiscount);
     }
+    function onLoadColor(colorId){
+      if(colorId !== null){
+        document.getElementById("colorCheckbox").click();
+        ColorChange();
+      }
+    }
     function ColorChange(){
-        setChekedColor(!checkedColor);
+        formValues.colorId = !checkedColor === false ? null : formValues.colorId;
+        setCheckedColor(!checkedColor);
     }
     function ImageUpload(e) {
       const selectedFiles = Array.from(e.target.files);
@@ -207,8 +229,7 @@ const formInitialState = {
               </div>
               {checkedColor ? (<div>
                 <label htmlFor="colorId">Color</label><br/>
-                <select id="colorId" name="colorId" onChange={changeHandler}>
-                <option></option>
+                <select id="colorId" name="colorId" value={formValues.colorId} onChange={changeHandler}>
                   {formValues.colors && formValues.colors.map(color => (
                     <option key={color.id} value={color.id}>{color.name}</option>
                   ))}
@@ -230,11 +251,11 @@ const formInitialState = {
                   </div>
                   <div>
                     <label htmlFor="discount.startDate">Discount Start Date:</label><br/>
-                    <input type="date" id="discount.startDate" name="discount.startDate" value={formValues.discount.startDate} onChange={changeHandler}/><br/>
+                    <input type="date" id="discount.startDate" name="discount.startDate" value={startDateHelper} onChange={changeHandler}/><br/>
                   </div>
                   <div>
                     <label htmlFor="discount.endDate">Discount End Date:</label><br/>
-                    <input type="date" id="discount.endDate" name="discount.endDate" value={formValues.discount.endDate} onChange={changeHandler}/><br/>
+                    <input type="date" id="discount.endDate" name="discount.endDate" value={Date(formValues.discount.endDate)} onChange={changeHandler}/><br/>
                   </div>
                   <div>
                 <label htmlFor="DiscountId">Discounts</label><br/>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import ApiUrl from "../../Common/Url";
 import styles from "./DetailsComponent.module.css"
 import * as React from 'react';
@@ -8,6 +8,9 @@ import Stack from '@mui/material/Stack';
 export default function DetailsComponent(){
     const [data, setData] = useState();
     const [quantity, setQuantity] = useState("0");
+    const [selectedImage, setSelectedImage] = useState(null); 
+    const navigate = useNavigate();
+
     const params = useParams();
     console.log(params)
 
@@ -15,7 +18,7 @@ export default function DetailsComponent(){
         fetch(`${ApiUrl}/api/Shop/Details?id=${params.id}`)
         .then(responese => responese.json())
         .then(d => setData(d))
-    }, []);  
+    }, [params.id]);  
 
     function StockStatus(quantity) {
         if (quantity >= 3) {
@@ -45,16 +48,22 @@ export default function DetailsComponent(){
             setQuantity(state=> state - 1);
         }    
     }
+    function handleSmallImageClick(img) {
+        setSelectedImage(img);
+    }
+    function changeColor(e){
+        navigate(`/shop/${e.target.value}`)
+    }
     console.log(data);
     return(
         <div className={styles.container}>
             <div className={styles.imgsContainer}>
                 <div className={styles.bigImage}>
-                    <img src={data !== undefined ? data.imgUrls[0] : null} alt="" />
+                    <img src={selectedImage || (data !== undefined ? data.imgUrls[0] : null)} alt="" />
                 </div>
                 <div className={styles.smallImages}>
                     {data && data.imgUrls.map(img => (
-                         <img key={img} src={img} alt="" />
+                         <img key={img} src={img} onClick={() => handleSmallImageClick(img)} alt="" />
                     ))}
                 </div>
             </div>
@@ -82,9 +91,9 @@ export default function DetailsComponent(){
                             {StockStatus(data.quantity)}
                         </div>
                         {data.color != null ? (
-                            <div>
-                                <label htmlFor="">Color</label>
-                                <select name="color" id="color">
+                            <div className={styles.colorContainer}>
+                                <h4>Color:</h4>
+                                <select name="color" id="color" onChange={changeColor.bind(this)}>
                                 <option key={data.color} value={data.id}>{data.color}</option>
                                 {data.colors.map(({ productId, colorName }) => (
                                     <option key={productId} value={productId}>
@@ -94,6 +103,14 @@ export default function DetailsComponent(){
                                 </select>
                             </div>
                         ) : null}
+                        <div>
+                            <ul>
+                                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                                <li>Sint totam molestiae dolorum laborum neque excepturi.</li>
+                                <li>Rem perferendis accusantium ea iste aliquam aperiam, obcaecati commodi quos ex, eligendi animi aliquid dignissimos.</li>
+                                <li></li>
+                            </ul>
+                        </div>
                     </div>
                     <div className={styles.checkOutCard}>
                         {data.discount.isDiscount === true ? (
@@ -115,10 +132,10 @@ export default function DetailsComponent(){
                             <button className={styles.addToCardBtn}>Add to card</button>
                             <button className={styles.buyNowBtn}>Buy now</button>
                         </div>
-                        <div className={styles.test}>
-                            <label htmlFor="rating">Rating:</label>
+                        <div className={styles.ratingStars}>
+                            <h4 className={styles.ratingLabel} htmlFor="rating">Rating:</h4>
                             <Stack spacing={1}>
-                                <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+                                <Rating name="half-rating" defaultValue={0.5} precision={0.5} />
                             </Stack>
                         </div>
                         <div>

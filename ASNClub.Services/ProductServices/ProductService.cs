@@ -95,6 +95,7 @@ namespace ASNClub.Services.ProductServices
         }
         public async Task CreateProductAsync(ProductFormDTO formModel)
         {
+
             Product product = new Product()
             {
                 Make = formModel.Make,
@@ -106,6 +107,10 @@ namespace ASNClub.Services.ProductServices
                 ColorId = formModel.ColorId == 0 || formModel.ColorId == 1 ? null : formModel.ColorId,// TO DO: do the logic to set null auto not id=1
                 CategoryId = formModel.CategoryId
             };
+            if (product.ColorId == 1 || product.ColorId == 0)
+            {
+                product.ColorId = null;
+            }
             //Create discount logic 
             Discount discount = new Discount();
             discount.IsDiscount = formModel.Discount.IsDiscount;
@@ -201,7 +206,7 @@ namespace ASNClub.Services.ProductServices
                 Quantity = product.Quantity,
                 CategoryId = product.CategoryId,
                 TypeId = product.TypeId,
-                ColorId = product.ColorId,
+                ColorId = product.ColorId == 1 ? null : product.ColorId,
                 Description = product.Description,
                 Discount = new DiscountFormDTO
                 {
@@ -259,7 +264,15 @@ namespace ASNClub.Services.ProductServices
             product.Quantity = productDTO.Quantity;
             product.TypeId = productDTO.TypeId;
             product.CategoryId = productDTO.CategoryId;
-            product.ColorId = productDTO.ColorId;
+
+            if (productDTO.ColorId == 1 || productDTO.ColorId == 0)
+            {
+                product.ColorId = null;
+            }
+            else
+            {
+                product.ColorId = productDTO.ColorId;
+            }
 
             var oldUrls = await dbContext.ProductsImgUrls.Where(x => x.ProductId == product.Id).Include(x => x.ImgUrl).Select(x => x.ImgUrl.Url).ToListAsync();
             //Adding new images
