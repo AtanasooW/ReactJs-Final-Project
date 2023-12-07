@@ -353,6 +353,25 @@ namespace ASNClub.Services.ProductServices
             product.Colors = colors;
             return product;
         }
+
+        public async Task<AllProductDTO> GetProductForCheckout(int id)
+        {
+            AllProductDTO productDTO = await dbContext.Products.Where(x => x.Id == id)
+                .Select(p => new AllProductDTO
+                {
+                    Id = p.Id.ToString(),
+                    Make = p.Make,
+                    Model = p.Model,
+                    Price = p.Price,
+                    ImgUrl = p.ImgUrls.FirstOrDefault(x => x.ProductId == p.Id).ImgUrl.Url,
+                    Type = p.Type.Name,
+                    Color = p.Color.Name,
+                    IsDiscount = p.Discount.IsDiscount,
+                    DiscountRate = p.Discount.DiscountRate,
+
+                }).FirstOrDefaultAsync();
+            return productDTO;
+        }
         //-------------Rating Logic
         public async Task AddRatingAsync(int id, int ratingValue, string userId)//, string? userId
         {

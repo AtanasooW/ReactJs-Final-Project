@@ -85,5 +85,18 @@ namespace webapi.Controllers
                 return BadRequest("Error ocures while rating " + e.Message);
             }
         }
+        [HttpGet("CheckoutProduct")]
+        public async Task<IActionResult> CheckoutProduct(int id)
+        {
+            var product = await productService.GetProductForCheckout(id);
+            if (product != null)
+            {
+                return Ok(product);
+            }
+            else
+            {
+                return BadRequest("Error ocures");
+            }
+        }
     }
 }
