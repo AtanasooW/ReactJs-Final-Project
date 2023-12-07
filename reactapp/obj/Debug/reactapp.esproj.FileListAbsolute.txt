@@ -6,3 +6,5 @@ C:\Kaufland\Programming\ReactProject\ReactJs-Final-Project\reactapp\obj\Debug\re
 C:\Kaufland\Programming\ReactProject\ReactJs-Final-Project\reactapp\obj\Debug\reactapp.esproj.CoreCompileInputs.cache
 C:\Kaufland\Programming\ReactProject\TestReactProject\ReactJs-Final-Project\reactapp\obj\Debug\reactapp.esproj.SuggestedBindingRedirects.cache
 C:\Kaufland\Programming\ReactProject\TestReactProject\ReactJs-Final-Project\reactapp\obj\Debug\reactapp.esproj.CoreCompileInputs.cache
+C:\Users\Doroti\Desktop\Atanas\React\ReactFinalProject\ReactJs-Final-Project\reactapp\obj\Debug\reactapp.esproj.SuggestedBindingRedirects.cache
+C:\Users\Doroti\Desktop\Atanas\React\ReactFinalProject\ReactJs-Final-Project\reactapp\obj\Debug\reactapp.esproj.CoreCompileInputs.cache

@@ -52,10 +52,10 @@ export default function DetailsComponent(){
         console.log(e.target.value)
         const response = await fetch(`${ApiUrl}/api/Shop/Rating?id=${data.id}&ratingValue=${e.target.value}&userId=${check.id}`);
           if(response.status === 200){
-            navigate(`/shop/${data.id}`);
+            window.location.reload(false);
           }
           else{
-            console.error("Error ocures while rating")
+            alert("Error ocures while rating")
           }
     }
     function decreaseQuantity(){
@@ -103,11 +103,11 @@ export default function DetailsComponent(){
                         <div className={styles.ratingContainer}>
                             <div>
                                 {Array.from({ length: Math.floor(data.rating) }).map((_, index) => (
-                                    <i key={index} className="fa fa-star"></i>
+                                    <i key={index} class="fa-solid fa-star fa-xl" style={{color: "#fbff00"}}></i>
                                 ))}
-                                {data.rating % 1 !== 0 && <i className="fas fa-star-half-alt"></i>}
+                                {data.rating % 1 !== 0 && <i class="fa-solid fa-star-half-stroke fa-xl" style={{color: "#fbff00"}}></i>}
                                 {Array.from({ length: 5 - Math.ceil(data.rating) }).map((_, index) => (
-                                    <i key={index} className="far fa-star"></i>
+                                    <i key={index} class="fa-regular fa-star fa-xl" style={{color: "#fbff00"}}></i>
                                 ))}
                                 <h4 className={styles.ratingValue}>{data.rating}</h4>
                             </div>

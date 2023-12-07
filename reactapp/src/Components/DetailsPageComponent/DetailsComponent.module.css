@@ -72,6 +72,7 @@
 }
 .colorContainer select{
     max-width: 25%;
+    padding: 0.5em 1em;
     background-color: #d7455b;
     border: black 2px solid;
     border-radius: 15px;

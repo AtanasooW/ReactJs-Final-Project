@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = webapi
 build_property.RootNamespace = webapi
-build_property.ProjectDir = C:\Kaufland\Programming\ReactProject\TestReactProject\ReactJs-Final-Project\webapi\
+build_property.ProjectDir = C:\Users\Doroti\Desktop\Atanas\React\ReactFinalProject\ReactJs-Final-Project\webapi\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Kaufland\Programming\ReactProject\TestReactProject\ReactJs-Final-Project\webapi
+build_property.MSBuildProjectDirectory = C:\Users\Doroti\Desktop\Atanas\React\ReactFinalProject\ReactJs-Final-Project\webapi
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Kaufland/Programming/ReactProject/TestReactProject/ReactJs-Final-Project/webapi/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/Doroti/Desktop/Atanas/React/ReactFinalProject/ReactJs-Final-Project/webapi/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Kaufland/Programming/ReactProject/TestReactProject/ReactJs-Final-Project/webapi/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/Doroti/Desktop/Atanas/React/ReactFinalProject/ReactJs-Final-Project/webapi/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Kaufland/Programming/ReactProject/TestReactProject/ReactJs-Final-Project/webapi/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/Doroti/Desktop/Atanas/React/ReactFinalProject/ReactJs-Final-Project/webapi/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Kaufland/Programming/ReactProject/TestReactProject/ReactJs-Final-Project/webapi/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/Doroti/Desktop/Atanas/React/ReactFinalProject/ReactJs-Final-Project/webapi/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Kaufland/Programming/ReactProject/TestReactProject/ReactJs-Final-Project/webapi/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/Doroti/Desktop/Atanas/React/ReactFinalProject/ReactJs-Final-Project/webapi/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Kaufland/Programming/ReactProject/TestReactProject/ReactJs-Final-Project/webapi/Pages/Shared/_Layout.cshtml]
+[C:/Users/Doroti/Desktop/Atanas/React/ReactFinalProject/ReactJs-Final-Project/webapi/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Kaufland/Programming/ReactProject/TestReactProject/ReactJs-Final-Project/webapi/Pages/Shared/_LoginPartial.cshtml]
+[C:/Users/Doroti/Desktop/Atanas/React/ReactFinalProject/ReactJs-Final-Project/webapi/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Kaufland/Programming/ReactProject/TestReactProject/ReactJs-Final-Project/webapi/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Doroti/Desktop/Atanas/React/ReactFinalProject/ReactJs-Final-Project/webapi/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Kaufland/Programming/ReactProject/TestReactProject/ReactJs-Final-Project/webapi/Pages/_ViewImports.cshtml]
+[C:/Users/Doroti/Desktop/Atanas/React/ReactFinalProject/ReactJs-Final-Project/webapi/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Kaufland/Programming/ReactProject/TestReactProject/ReactJs-Final-Project/webapi/Pages/_ViewStart.cshtml]
+[C:/Users/Doroti/Desktop/Atanas/React/ReactFinalProject/ReactJs-Final-Project/webapi/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

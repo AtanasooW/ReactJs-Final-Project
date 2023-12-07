@@ -13,15 +13,32 @@ export default function ProductCard(product){
       <Card.Body>
         <Card.Title>{product.type} for {product.make} {product.model}</Card.Title>
         <Card.Text>
-          Rating:
+          {product.rating !== null && (
+             <div className={styles.stars}>
+              <h6>Rating:</h6>
+             {Array.from({ length: Math.floor(product.rating) }).map((_, index) => (
+                 <i key={index} class="fa-solid fa-star fa-xs" style={{color: "#fbff00"}}></i>
+             ))}
+             {product.rating % 1 !== 0 && <i class="fa-solid fa-star-half-stroke fa-xs" style={{color: "#fbff00"}}></i>}
+             {Array.from({ length: 5 - Math.ceil(product.rating) }).map((_, index) => (
+                 <i key={index} class="fa-regular fa-star fa-xs" style={{color: "#fbff00"}}></i>
+             ))}
+         </div>
+          )}
+         
+          
         </Card.Text>
         <Card.Text className={styles.price}>
-          Price: <span className={styles.whiteSpan}>${product.price}</span>
+        {product.isDiscount === true ? (
+                            <div>
+                               Price:<span className={styles.whiteSpan}> ${(product.price - ((product.price * product.discountRate) / 100)).toFixed(2)}<span className={styles.oldPrice}>${product.price.toFixed(2)}</span></span>
+                            </div>
+                        ) : (<span>Price: <span className={styles.whiteSpan}>${product.price}</span></span>)}
         </Card.Text>
         <div className={styles.buttonContainer}>
           
         <a href={`/shop/${product.id}`}><Button className={styles.redButton}>View Details</Button></a>
-        <Button className={styles.blueButton}>Buy now</Button>
+        <a href={`/shop/${product.id}`}><Button className={styles.blueButton}>Buy now</Button></a>
         </div>
       </Card.Body>
     </Card>

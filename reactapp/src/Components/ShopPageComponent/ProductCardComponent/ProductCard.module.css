@@ -39,3 +39,19 @@
 .whiteSpan{
     color: white;
 }
+.oldPrice{
+    text-decoration: line-through;
+    font-size: 0.85em;
+    color: #e8bd99;
+    margin-left: 0.5em;
+}
+.stars{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.stars h6{
+    font-size: 1.1em;
+    margin: 0 0.5em 0 0;
+    padding: 0;
+}

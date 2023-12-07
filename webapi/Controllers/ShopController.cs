@@ -82,7 +82,7 @@ namespace webapi.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest("Error ocures while rating" + e.Message);
+                return BadRequest("Error ocures while rating " + e.Message);
             }
         }
     }
