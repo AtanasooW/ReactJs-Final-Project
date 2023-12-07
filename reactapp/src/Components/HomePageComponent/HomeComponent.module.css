@@ -12,6 +12,8 @@
 }
 .backgroundImg{
     filter: brightness(65%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .onTopText{
     max-width: 30%;
@@ -59,8 +61,10 @@
     margin: 0 1.5em;
     padding: 1em 2em;
     background-color: #cf2c44;
-    border: none;
+    border: black 2px solid;
     border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .redButton:hover{
     transform: scale(1.05);
@@ -73,6 +77,8 @@
 }
 .dark{
     filter: brightness(60%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .categories {
  align-self: flex-start;

@@ -73,6 +73,7 @@ namespace webapi.Controllers
             }
             return Ok(model);
         }
+        [HttpPost("Rating")]
         public async Task<IActionResult> SetRating(int id, int ratingValue) // guid UserId
         {
             //var userId = User.GetId();

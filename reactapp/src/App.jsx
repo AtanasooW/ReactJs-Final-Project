@@ -20,7 +20,7 @@ export default function App() {
                     <Route path="/shop/:id" element={<DetailsComponent/>}/>
                     <Route path="/createProduct" element={<CreateProduct/>}/>
                     <Route path="/updateProduct/:id" element={<UpdateProduct/>}/>
-                    <Route path="/signup" element={<SingUp/>}/>
+                    <Route path="/singup" element={<SingUp/>}/>
                 </Routes>
             </main>
             <Footer/>

@@ -2,14 +2,17 @@
     font-size: 1.2em;
     font-weight: 500;
 }
-select, input{
+.selectMenu, .inputMenu{
     width: 90%;
     padding: 0.5em 0.75em;
+    margin: 0.5em 0;
     background-color: #8facd5;
     color: white;
     border-radius: 5px;
     border: #0a111b solid 2px;
     margin-bottom: 0.5em;   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 .contentContainer{
     margin: 0 2em 0 0;
