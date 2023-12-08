@@ -1,611 +1,687 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\css\\site.css",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\favicon.ico",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\00478b4f-2b42-4f47-9efe-5a80a923093d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\00478b4f-2b42-4f47-9efe-5a80a923093d.jpg",
       "PackagePath": "staticwebassets\\images\\00478b4f-2b42-4f47-9efe-5a80a923093d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\047d3518-8352-4028-871a-19c0797c37c9.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\03c700ab-2f4f-41f4-a0f7-a46cf4e25e40.png",
+      "PackagePath": "staticwebassets\\images\\03c700ab-2f4f-41f4-a0f7-a46cf4e25e40.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\047d3518-8352-4028-871a-19c0797c37c9.jpg",
       "PackagePath": "staticwebassets\\images\\047d3518-8352-4028-871a-19c0797c37c9.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\07d6c8a2-f903-4d90-b78e-8a4049389fe6.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\07d6c8a2-f903-4d90-b78e-8a4049389fe6.png",
       "PackagePath": "staticwebassets\\images\\07d6c8a2-f903-4d90-b78e-8a4049389fe6.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\0842557f-6a16-4230-8328-b190e4ba96e5.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\0842557f-6a16-4230-8328-b190e4ba96e5.png",
       "PackagePath": "staticwebassets\\images\\0842557f-6a16-4230-8328-b190e4ba96e5.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\0844c53a-0e2e-407c-93db-b528d4a09b3f.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\0844c53a-0e2e-407c-93db-b528d4a09b3f.jpg",
       "PackagePath": "staticwebassets\\images\\0844c53a-0e2e-407c-93db-b528d4a09b3f.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\087bb7f6-98c9-4bda-889b-8ef607cd387a.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\087bb7f6-98c9-4bda-889b-8ef607cd387a.jpg",
       "PackagePath": "staticwebassets\\images\\087bb7f6-98c9-4bda-889b-8ef607cd387a.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\0e199cc8-be7d-4a1f-945b-4bd124c2c0c2.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\0c0885d9-d40c-45d5-9118-97efeceb179f.jpg",
+      "PackagePath": "staticwebassets\\images\\0c0885d9-d40c-45d5-9118-97efeceb179f.jpg"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\0e199cc8-be7d-4a1f-945b-4bd124c2c0c2.png",
       "PackagePath": "staticwebassets\\images\\0e199cc8-be7d-4a1f-945b-4bd124c2c0c2.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\0e497bd2-06b6-45d2-90b8-652740ae943d.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\0e497bd2-06b6-45d2-90b8-652740ae943d.png",
       "PackagePath": "staticwebassets\\images\\0e497bd2-06b6-45d2-90b8-652740ae943d.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\144b8557-79c6-4146-bd2b-5226fea5c93d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\144b8557-79c6-4146-bd2b-5226fea5c93d.jpg",
       "PackagePath": "staticwebassets\\images\\144b8557-79c6-4146-bd2b-5226fea5c93d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\15308ec0-7418-4f71-ac5a-3fa9c2060a3d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\15308ec0-7418-4f71-ac5a-3fa9c2060a3d.jpg",
       "PackagePath": "staticwebassets\\images\\15308ec0-7418-4f71-ac5a-3fa9c2060a3d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\169f0ecb-4cd6-4c9f-ad26-dfc1985419e0.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\169f0ecb-4cd6-4c9f-ad26-dfc1985419e0.jpg",
       "PackagePath": "staticwebassets\\images\\169f0ecb-4cd6-4c9f-ad26-dfc1985419e0.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\1ba1fd66-a7c3-48f3-8820-4076586eeab2.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\1ba1fd66-a7c3-48f3-8820-4076586eeab2.jpg",
       "PackagePath": "staticwebassets\\images\\1ba1fd66-a7c3-48f3-8820-4076586eeab2.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\1ca9e4fd-45df-48ef-8a7a-596495aaacb0.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\1ca9e4fd-45df-48ef-8a7a-596495aaacb0.jpg",
       "PackagePath": "staticwebassets\\images\\1ca9e4fd-45df-48ef-8a7a-596495aaacb0.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\1d6d9022-b4c1-4a4d-8d2b-c971bbf3f08a.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\1d6d9022-b4c1-4a4d-8d2b-c971bbf3f08a.jpg",
       "PackagePath": "staticwebassets\\images\\1d6d9022-b4c1-4a4d-8d2b-c971bbf3f08a.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\23dfcf74-7c40-4b6e-a070-364e4c87be15.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\1d8a5b37-9397-4e22-a61a-18f3c19b0ecf.png",
+      "PackagePath": "staticwebassets\\images\\1d8a5b37-9397-4e22-a61a-18f3c19b0ecf.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\1e901370-d0ef-4e76-ad18-321e1ee5fe60.png",
+      "PackagePath": "staticwebassets\\images\\1e901370-d0ef-4e76-ad18-321e1ee5fe60.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\23dfcf74-7c40-4b6e-a070-364e4c87be15.jpg",
       "PackagePath": "staticwebassets\\images\\23dfcf74-7c40-4b6e-a070-364e4c87be15.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\24d95f81-0294-4409-8c35-1dbfaed1094c.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\24d95f81-0294-4409-8c35-1dbfaed1094c.jpg",
       "PackagePath": "staticwebassets\\images\\24d95f81-0294-4409-8c35-1dbfaed1094c.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\261b6e53-c16b-4c3b-8127-37df94663cde.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\261b6e53-c16b-4c3b-8127-37df94663cde.png",
       "PackagePath": "staticwebassets\\images\\261b6e53-c16b-4c3b-8127-37df94663cde.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\29040221-25c1-41b5-b4ed-6bc4a4669850.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\29040221-25c1-41b5-b4ed-6bc4a4669850.jpg",
       "PackagePath": "staticwebassets\\images\\29040221-25c1-41b5-b4ed-6bc4a4669850.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\2b8aaa99-6d48-410c-b153-a375602f0fbd.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\2b8aaa99-6d48-410c-b153-a375602f0fbd.png",
       "PackagePath": "staticwebassets\\images\\2b8aaa99-6d48-410c-b153-a375602f0fbd.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\2f485cae-9504-4671-b8a3-9d745e79d05e.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\2e52fa9f-f22e-4b83-8946-6b85bfe21ad4.png",
+      "PackagePath": "staticwebassets\\images\\2e52fa9f-f22e-4b83-8946-6b85bfe21ad4.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\2e73509a-0f9a-4971-a0f0-85bd9b10b3be.png",
+      "PackagePath": "staticwebassets\\images\\2e73509a-0f9a-4971-a0f0-85bd9b10b3be.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\2f485cae-9504-4671-b8a3-9d745e79d05e.jpg",
       "PackagePath": "staticwebassets\\images\\2f485cae-9504-4671-b8a3-9d745e79d05e.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\30aa7509-14bb-4015-b8ba-6bb22f0a5c0d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\30aa7509-14bb-4015-b8ba-6bb22f0a5c0d.jpg",
       "PackagePath": "staticwebassets\\images\\30aa7509-14bb-4015-b8ba-6bb22f0a5c0d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3384ed99-6bc3-486c-b7c6-654f02da671c.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3384ed99-6bc3-486c-b7c6-654f02da671c.png",
       "PackagePath": "staticwebassets\\images\\3384ed99-6bc3-486c-b7c6-654f02da671c.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3584f486-ec84-4eca-83ad-dd92fe18066d.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3584f486-ec84-4eca-83ad-dd92fe18066d.png",
       "PackagePath": "staticwebassets\\images\\3584f486-ec84-4eca-83ad-dd92fe18066d.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3706019f-ecfb-4b97-a4af-6440f7f9e266.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3706019f-ecfb-4b97-a4af-6440f7f9e266.png",
       "PackagePath": "staticwebassets\\images\\3706019f-ecfb-4b97-a4af-6440f7f9e266.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\385a54cf-17d6-42b1-aaa6-d46c75380822.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\385a54cf-17d6-42b1-aaa6-d46c75380822.png",
       "PackagePath": "staticwebassets\\images\\385a54cf-17d6-42b1-aaa6-d46c75380822.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3b89a455-eb4e-4bd1-a694-0f54e33ec477.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3b89a455-eb4e-4bd1-a694-0f54e33ec477.jpg",
       "PackagePath": "staticwebassets\\images\\3b89a455-eb4e-4bd1-a694-0f54e33ec477.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3bd6e0ab-e756-48a2-87bf-7eaf1fcd4f7f.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3bd6e0ab-e756-48a2-87bf-7eaf1fcd4f7f.jpg",
       "PackagePath": "staticwebassets\\images\\3bd6e0ab-e756-48a2-87bf-7eaf1fcd4f7f.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3be65b56-6622-4c76-8d4c-7abdeddda3e7.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3be65b56-6622-4c76-8d4c-7abdeddda3e7.png",
       "PackagePath": "staticwebassets\\images\\3be65b56-6622-4c76-8d4c-7abdeddda3e7.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3bffa066-ab5f-4a60-adc0-a0cd0aee609a.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3bffa066-ab5f-4a60-adc0-a0cd0aee609a.jpg",
       "PackagePath": "staticwebassets\\images\\3bffa066-ab5f-4a60-adc0-a0cd0aee609a.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3f4e4271-0cef-4224-b7b9-1690d4fd7520.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3f4e4271-0cef-4224-b7b9-1690d4fd7520.jpg",
       "PackagePath": "staticwebassets\\images\\3f4e4271-0cef-4224-b7b9-1690d4fd7520.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3f690d0a-7da4-4399-8b4d-98c9ccbc6c21.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\3f690d0a-7da4-4399-8b4d-98c9ccbc6c21.png",
       "PackagePath": "staticwebassets\\images\\3f690d0a-7da4-4399-8b4d-98c9ccbc6c21.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\403fe8e8-7e17-41ea-a688-446635bdb126.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\403fe8e8-7e17-41ea-a688-446635bdb126.jpg",
       "PackagePath": "staticwebassets\\images\\403fe8e8-7e17-41ea-a688-446635bdb126.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\448ae544-d887-444b-b449-d0cf07b1e50a.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\448ae544-d887-444b-b449-d0cf07b1e50a.jpg",
       "PackagePath": "staticwebassets\\images\\448ae544-d887-444b-b449-d0cf07b1e50a.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\455a9ef5-ac4a-4da3-b673-e0334c896227.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\455a9ef5-ac4a-4da3-b673-e0334c896227.png",
       "PackagePath": "staticwebassets\\images\\455a9ef5-ac4a-4da3-b673-e0334c896227.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\45f9b24b-e0a4-4dd4-b139-82c1deb6d3ae.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\45f9b24b-e0a4-4dd4-b139-82c1deb6d3ae.png",
       "PackagePath": "staticwebassets\\images\\45f9b24b-e0a4-4dd4-b139-82c1deb6d3ae.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\474a0046-1c76-47fd-9ce2-5c4f7e19c3e6.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\474a0046-1c76-47fd-9ce2-5c4f7e19c3e6.jpg",
       "PackagePath": "staticwebassets\\images\\474a0046-1c76-47fd-9ce2-5c4f7e19c3e6.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\48b4e00b-c2fb-45fb-8d3e-14621a2c4c1f.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\48b4e00b-c2fb-45fb-8d3e-14621a2c4c1f.png",
       "PackagePath": "staticwebassets\\images\\48b4e00b-c2fb-45fb-8d3e-14621a2c4c1f.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4946825c-8c67-4a9b-bd48-0f23a1a04498.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4946825c-8c67-4a9b-bd48-0f23a1a04498.jpg",
       "PackagePath": "staticwebassets\\images\\4946825c-8c67-4a9b-bd48-0f23a1a04498.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4a50e93c-8f64-47bc-b654-324902666b25.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4a50e93c-8f64-47bc-b654-324902666b25.jpg",
       "PackagePath": "staticwebassets\\images\\4a50e93c-8f64-47bc-b654-324902666b25.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4c867814-a925-4da2-b3b8-a7e8a7c25b88.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4c867814-a925-4da2-b3b8-a7e8a7c25b88.jpg",
       "PackagePath": "staticwebassets\\images\\4c867814-a925-4da2-b3b8-a7e8a7c25b88.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4d0318ef-47f4-49ef-8e38-0c04ce63a827.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4d0318ef-47f4-49ef-8e38-0c04ce63a827.jpg",
       "PackagePath": "staticwebassets\\images\\4d0318ef-47f4-49ef-8e38-0c04ce63a827.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4e13ce13-18c0-4c4d-8ab4-01721488b24d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4e13ce13-18c0-4c4d-8ab4-01721488b24d.jpg",
       "PackagePath": "staticwebassets\\images\\4e13ce13-18c0-4c4d-8ab4-01721488b24d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4eed9e15-13d7-4ddd-b238-c729558d4e4b.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4eed9e15-13d7-4ddd-b238-c729558d4e4b.jpg",
       "PackagePath": "staticwebassets\\images\\4eed9e15-13d7-4ddd-b238-c729558d4e4b.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4f2e26f4-c88a-4264-b6ab-173da3a879cd.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\4f2e26f4-c88a-4264-b6ab-173da3a879cd.jpg",
       "PackagePath": "staticwebassets\\images\\4f2e26f4-c88a-4264-b6ab-173da3a879cd.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\518041a7-7d26-487b-931a-ed60c8dfb484.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\518041a7-7d26-487b-931a-ed60c8dfb484.jpg",
       "PackagePath": "staticwebassets\\images\\518041a7-7d26-487b-931a-ed60c8dfb484.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\523fff90-b54d-4396-9e8d-4d610e8cb62a.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\523fff90-b54d-4396-9e8d-4d610e8cb62a.jpg",
       "PackagePath": "staticwebassets\\images\\523fff90-b54d-4396-9e8d-4d610e8cb62a.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5244ba93-ac7b-4c81-920a-a5fcec3f8231.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5244ba93-ac7b-4c81-920a-a5fcec3f8231.jpg",
       "PackagePath": "staticwebassets\\images\\5244ba93-ac7b-4c81-920a-a5fcec3f8231.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\555ea3ef-e493-4091-943e-586b3230847d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5472bf58-ed56-41c8-81c0-44b2c3b2c0ca.png",
+      "PackagePath": "staticwebassets\\images\\5472bf58-ed56-41c8-81c0-44b2c3b2c0ca.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\555ea3ef-e493-4091-943e-586b3230847d.jpg",
       "PackagePath": "staticwebassets\\images\\555ea3ef-e493-4091-943e-586b3230847d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\55db30f1-1bfc-4e53-a9e9-a29c40d4b7fb.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\55db30f1-1bfc-4e53-a9e9-a29c40d4b7fb.jpg",
       "PackagePath": "staticwebassets\\images\\55db30f1-1bfc-4e53-a9e9-a29c40d4b7fb.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\58c552c0-c09c-4cf1-a241-93bfd883e148.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\58c552c0-c09c-4cf1-a241-93bfd883e148.jpg",
       "PackagePath": "staticwebassets\\images\\58c552c0-c09c-4cf1-a241-93bfd883e148.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5af26b0b-c26b-4fef-b3db-692fc3c962ac.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5af26b0b-c26b-4fef-b3db-692fc3c962ac.jpg",
       "PackagePath": "staticwebassets\\images\\5af26b0b-c26b-4fef-b3db-692fc3c962ac.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5cf44fe0-b3ff-4124-9388-3509ccdae500.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5ce3484a-7b65-42da-9e4e-a740c70b000f.png",
+      "PackagePath": "staticwebassets\\images\\5ce3484a-7b65-42da-9e4e-a740c70b000f.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5cf44fe0-b3ff-4124-9388-3509ccdae500.jpg",
       "PackagePath": "staticwebassets\\images\\5cf44fe0-b3ff-4124-9388-3509ccdae500.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5e87367d-fe15-49b5-bb9d-feb6e37838f8.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5e87367d-fe15-49b5-bb9d-feb6e37838f8.jpg",
       "PackagePath": "staticwebassets\\images\\5e87367d-fe15-49b5-bb9d-feb6e37838f8.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5ee0f7f4-3959-480a-8c51-94802bf8ea60.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\5ee0f7f4-3959-480a-8c51-94802bf8ea60.jpg",
       "PackagePath": "staticwebassets\\images\\5ee0f7f4-3959-480a-8c51-94802bf8ea60.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\600297a2-f57a-4e34-bd7c-846bc49b712d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\600297a2-f57a-4e34-bd7c-846bc49b712d.jpg",
       "PackagePath": "staticwebassets\\images\\600297a2-f57a-4e34-bd7c-846bc49b712d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\60950c1a-f29b-478c-915d-f50c6ec516f1.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\60950c1a-f29b-478c-915d-f50c6ec516f1.jpg",
       "PackagePath": "staticwebassets\\images\\60950c1a-f29b-478c-915d-f50c6ec516f1.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\60c8e88e-04ba-4f72-ba04-0f2efb092c67.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\60c8e88e-04ba-4f72-ba04-0f2efb092c67.jpg",
       "PackagePath": "staticwebassets\\images\\60c8e88e-04ba-4f72-ba04-0f2efb092c67.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\619790c1-f1d7-468b-8ecc-207a6efa934f.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\619790c1-f1d7-468b-8ecc-207a6efa934f.jpg",
       "PackagePath": "staticwebassets\\images\\619790c1-f1d7-468b-8ecc-207a6efa934f.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\62b3c830-d0ca-415a-8c10-1ff86df21e98.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\62b3c830-d0ca-415a-8c10-1ff86df21e98.png",
       "PackagePath": "staticwebassets\\images\\62b3c830-d0ca-415a-8c10-1ff86df21e98.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\63d7521a-48a7-4e9f-b25a-331b5198d7bb.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\63d7521a-48a7-4e9f-b25a-331b5198d7bb.jpg",
       "PackagePath": "staticwebassets\\images\\63d7521a-48a7-4e9f-b25a-331b5198d7bb.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\681afe07-21d1-47ce-92fd-bfbd5df7769a.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\6453fb60-16e5-4fc9-8782-aa06c3b3c737.jpg",
+      "PackagePath": "staticwebassets\\images\\6453fb60-16e5-4fc9-8782-aa06c3b3c737.jpg"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\681afe07-21d1-47ce-92fd-bfbd5df7769a.jpg",
       "PackagePath": "staticwebassets\\images\\681afe07-21d1-47ce-92fd-bfbd5df7769a.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\6ab357d8-cd0d-4a9a-8706-15492e84841e.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\6ab357d8-cd0d-4a9a-8706-15492e84841e.jpg",
       "PackagePath": "staticwebassets\\images\\6ab357d8-cd0d-4a9a-8706-15492e84841e.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\6b986e34-3a6c-4988-8bd7-eb0366204edd.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\6b986e34-3a6c-4988-8bd7-eb0366204edd.jpg",
       "PackagePath": "staticwebassets\\images\\6b986e34-3a6c-4988-8bd7-eb0366204edd.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\6ea666e0-0536-4c85-a140-b35434bc5318.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\6ea666e0-0536-4c85-a140-b35434bc5318.jpg",
       "PackagePath": "staticwebassets\\images\\6ea666e0-0536-4c85-a140-b35434bc5318.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\776acf03-8bcf-4b4d-8287-cc2dbac6cdf7.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\776acf03-8bcf-4b4d-8287-cc2dbac6cdf7.jpg",
       "PackagePath": "staticwebassets\\images\\776acf03-8bcf-4b4d-8287-cc2dbac6cdf7.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\77fd4155-d6ee-42bc-a99f-3511b09ce18f.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\77fd4155-d6ee-42bc-a99f-3511b09ce18f.jpg",
       "PackagePath": "staticwebassets\\images\\77fd4155-d6ee-42bc-a99f-3511b09ce18f.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\7a744c82-6277-418a-a9b6-d23b64b127b8.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\7a744c82-6277-418a-a9b6-d23b64b127b8.jpg",
       "PackagePath": "staticwebassets\\images\\7a744c82-6277-418a-a9b6-d23b64b127b8.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\7d55dd2f-cea2-436b-892d-a3332823015a.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\7d55dd2f-cea2-436b-892d-a3332823015a.jpg",
       "PackagePath": "staticwebassets\\images\\7d55dd2f-cea2-436b-892d-a3332823015a.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\808dc447-7880-4522-8e94-427b2a0c6b12.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\808dc447-7880-4522-8e94-427b2a0c6b12.png",
       "PackagePath": "staticwebassets\\images\\808dc447-7880-4522-8e94-427b2a0c6b12.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\828d9a9b-08d7-497b-a038-2ecc82354806.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\828d9a9b-08d7-497b-a038-2ecc82354806.jpg",
       "PackagePath": "staticwebassets\\images\\828d9a9b-08d7-497b-a038-2ecc82354806.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\839a118f-57ac-4290-85cc-f914a8851158.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\839a118f-57ac-4290-85cc-f914a8851158.jpg",
       "PackagePath": "staticwebassets\\images\\839a118f-57ac-4290-85cc-f914a8851158.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\844afe92-65ec-42cc-a198-837b9e4078bf.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\844afe92-65ec-42cc-a198-837b9e4078bf.png",
       "PackagePath": "staticwebassets\\images\\844afe92-65ec-42cc-a198-837b9e4078bf.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8566681b-558c-4b6a-8fb4-b0732e733ccd.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8566681b-558c-4b6a-8fb4-b0732e733ccd.jpg",
       "PackagePath": "staticwebassets\\images\\8566681b-558c-4b6a-8fb4-b0732e733ccd.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\85f0fef3-3dad-4eeb-8843-6b4537e11ce4.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\85f0fef3-3dad-4eeb-8843-6b4537e11ce4.jpg",
       "PackagePath": "staticwebassets\\images\\85f0fef3-3dad-4eeb-8843-6b4537e11ce4.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\886367cf-c97d-49c6-9396-5437c14671d8.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\886367cf-c97d-49c6-9396-5437c14671d8.jpg",
       "PackagePath": "staticwebassets\\images\\886367cf-c97d-49c6-9396-5437c14671d8.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8978c8f2-2d85-4bdb-bc0f-d90fe619e3f0.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8978c8f2-2d85-4bdb-bc0f-d90fe619e3f0.jpg",
       "PackagePath": "staticwebassets\\images\\8978c8f2-2d85-4bdb-bc0f-d90fe619e3f0.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8b5d7e49-e057-4a02-b3d1-af24727a95dd.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8b5d7e49-e057-4a02-b3d1-af24727a95dd.png",
       "PackagePath": "staticwebassets\\images\\8b5d7e49-e057-4a02-b3d1-af24727a95dd.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8c4bb667-67d9-4526-b1c7-8124877f9ea0.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8c4bb667-67d9-4526-b1c7-8124877f9ea0.jpg",
       "PackagePath": "staticwebassets\\images\\8c4bb667-67d9-4526-b1c7-8124877f9ea0.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8e42d7ad-c0cd-49da-aec5-ada01d10a051.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8c79927e-e87f-4a0b-8f24-8fb169fb9fa4.png",
+      "PackagePath": "staticwebassets\\images\\8c79927e-e87f-4a0b-8f24-8fb169fb9fa4.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8e42d7ad-c0cd-49da-aec5-ada01d10a051.jpg",
       "PackagePath": "staticwebassets\\images\\8e42d7ad-c0cd-49da-aec5-ada01d10a051.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8ee44d3e-a0cc-4d35-ada4-27f7b8f2b7ee.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\8ee44d3e-a0cc-4d35-ada4-27f7b8f2b7ee.png",
       "PackagePath": "staticwebassets\\images\\8ee44d3e-a0cc-4d35-ada4-27f7b8f2b7ee.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\93021395-028b-4baa-9637-6d25e8c2e2eb.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\93021395-028b-4baa-9637-6d25e8c2e2eb.jpg",
       "PackagePath": "staticwebassets\\images\\93021395-028b-4baa-9637-6d25e8c2e2eb.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\94968b43-28ce-421f-81ad-14bd99fd6ce8.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\94968b43-28ce-421f-81ad-14bd99fd6ce8.png",
       "PackagePath": "staticwebassets\\images\\94968b43-28ce-421f-81ad-14bd99fd6ce8.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\973c1f7c-6d90-42d5-8410-943848292bd3.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\963a6dfa-5571-46e7-a574-13a790887be5.png",
+      "PackagePath": "staticwebassets\\images\\963a6dfa-5571-46e7-a574-13a790887be5.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\973c1f7c-6d90-42d5-8410-943848292bd3.jpg",
       "PackagePath": "staticwebassets\\images\\973c1f7c-6d90-42d5-8410-943848292bd3.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\980f75fa-ce1f-41f2-bfc4-8fdb81aa38aa.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\980f75fa-ce1f-41f2-bfc4-8fdb81aa38aa.jpg",
       "PackagePath": "staticwebassets\\images\\980f75fa-ce1f-41f2-bfc4-8fdb81aa38aa.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\9ad7711c-e341-4668-8626-fcd30766109b.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\9ad7711c-e341-4668-8626-fcd30766109b.jpg",
       "PackagePath": "staticwebassets\\images\\9ad7711c-e341-4668-8626-fcd30766109b.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\9c8aea21-79a2-4997-9d87-ac4abfc704c1.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\9c8aea21-79a2-4997-9d87-ac4abfc704c1.jpg",
       "PackagePath": "staticwebassets\\images\\9c8aea21-79a2-4997-9d87-ac4abfc704c1.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\9de53dc4-7dbc-46f2-8c2a-00d3a1691aff.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\9de53dc4-7dbc-46f2-8c2a-00d3a1691aff.jpg",
       "PackagePath": "staticwebassets\\images\\9de53dc4-7dbc-46f2-8c2a-00d3a1691aff.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\9eb66803-5842-4bf9-ad2d-4dd5fd277698.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\9eb66803-5842-4bf9-ad2d-4dd5fd277698.jpg",
       "PackagePath": "staticwebassets\\images\\9eb66803-5842-4bf9-ad2d-4dd5fd277698.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\9f207a05-956b-4b5b-b2f5-98ad500dac6d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\9f207a05-956b-4b5b-b2f5-98ad500dac6d.jpg",
       "PackagePath": "staticwebassets\\images\\9f207a05-956b-4b5b-b2f5-98ad500dac6d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\a250ef18-4b12-443f-a611-c8a5ce24b1d9.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\a250ef18-4b12-443f-a611-c8a5ce24b1d9.jpg",
       "PackagePath": "staticwebassets\\images\\a250ef18-4b12-443f-a611-c8a5ce24b1d9.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\a32f49f7-8f9b-4791-9ea5-85db2ba48949.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\a32f49f7-8f9b-4791-9ea5-85db2ba48949.jpg",
       "PackagePath": "staticwebassets\\images\\a32f49f7-8f9b-4791-9ea5-85db2ba48949.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\a879388c-bcb2-4d94-a458-7abcd4b45a2c.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\a73c9d2d-1928-4bd5-95d8-22c27d998cd8.png",
+      "PackagePath": "staticwebassets\\images\\a73c9d2d-1928-4bd5-95d8-22c27d998cd8.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\a879388c-bcb2-4d94-a458-7abcd4b45a2c.jpg",
       "PackagePath": "staticwebassets\\images\\a879388c-bcb2-4d94-a458-7abcd4b45a2c.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\ab0bc25e-52ce-4e03-b4e6-6fd17b46982d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\a880f092-f476-4a7d-aec5-21b220886e2f.png",
+      "PackagePath": "staticwebassets\\images\\a880f092-f476-4a7d-aec5-21b220886e2f.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\ab0bc25e-52ce-4e03-b4e6-6fd17b46982d.jpg",
       "PackagePath": "staticwebassets\\images\\ab0bc25e-52ce-4e03-b4e6-6fd17b46982d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\af80e051-f1ea-41d8-b08b-1d8328606473.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\aec83ed6-5544-40b5-afe8-c6b28becbf53.jpg",
+      "PackagePath": "staticwebassets\\images\\aec83ed6-5544-40b5-afe8-c6b28becbf53.jpg"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\af80e051-f1ea-41d8-b08b-1d8328606473.jpg",
       "PackagePath": "staticwebassets\\images\\af80e051-f1ea-41d8-b08b-1d8328606473.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\afd54abb-78ab-49ae-b814-278bd4fab900.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\afd54abb-78ab-49ae-b814-278bd4fab900.jpg",
       "PackagePath": "staticwebassets\\images\\afd54abb-78ab-49ae-b814-278bd4fab900.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\b0594995-a9fd-4a95-8347-19d1e7138604.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\b0594995-a9fd-4a95-8347-19d1e7138604.jpg",
       "PackagePath": "staticwebassets\\images\\b0594995-a9fd-4a95-8347-19d1e7138604.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\b5c8dd53-8ce0-404a-9cd2-e7d07df1006e.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\b071af25-95fc-4055-b09e-d0395369169f.png",
+      "PackagePath": "staticwebassets\\images\\b071af25-95fc-4055-b09e-d0395369169f.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\b5c8dd53-8ce0-404a-9cd2-e7d07df1006e.jpg",
       "PackagePath": "staticwebassets\\images\\b5c8dd53-8ce0-404a-9cd2-e7d07df1006e.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\b90f5c27-2a97-46ff-b1f5-47ab2fda9fbd.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\b90f5c27-2a97-46ff-b1f5-47ab2fda9fbd.jpg",
       "PackagePath": "staticwebassets\\images\\b90f5c27-2a97-46ff-b1f5-47ab2fda9fbd.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\bbbd0c60-4b68-4502-a90a-3d47646b30ff.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\ba3baaca-8a08-4b4a-bd8f-8b34a62e8fd1.png",
+      "PackagePath": "staticwebassets\\images\\ba3baaca-8a08-4b4a-bd8f-8b34a62e8fd1.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\bbbd0c60-4b68-4502-a90a-3d47646b30ff.jpg",
       "PackagePath": "staticwebassets\\images\\bbbd0c60-4b68-4502-a90a-3d47646b30ff.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\bd443a52-2e1e-48ad-b126-0a628d43fec8.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\bbe2b0c1-0b97-4dc8-8d04-c9b0b0b69cb5.png",
+      "PackagePath": "staticwebassets\\images\\bbe2b0c1-0b97-4dc8-8d04-c9b0b0b69cb5.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\bd443a52-2e1e-48ad-b126-0a628d43fec8.jpg",
       "PackagePath": "staticwebassets\\images\\bd443a52-2e1e-48ad-b126-0a628d43fec8.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\bdf165bd-a83f-4537-8388-5b2f4174e87e.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\bdf165bd-a83f-4537-8388-5b2f4174e87e.png",
       "PackagePath": "staticwebassets\\images\\bdf165bd-a83f-4537-8388-5b2f4174e87e.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\c05be1bc-ab79-4413-8757-bfeb0c9da281.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\c05be1bc-ab79-4413-8757-bfeb0c9da281.jpg",
       "PackagePath": "staticwebassets\\images\\c05be1bc-ab79-4413-8757-bfeb0c9da281.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\c163bc80-a466-4552-bc27-5a38a692e7cd.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\c163bc80-a466-4552-bc27-5a38a692e7cd.jpg",
       "PackagePath": "staticwebassets\\images\\c163bc80-a466-4552-bc27-5a38a692e7cd.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\c2fe50c9-b17d-4681-b350-4d6a2810878a.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\c2fe50c9-b17d-4681-b350-4d6a2810878a.jpg",
       "PackagePath": "staticwebassets\\images\\c2fe50c9-b17d-4681-b350-4d6a2810878a.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\c4786e1f-d0f5-4b1c-b613-4d641488d8da.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\c4786e1f-d0f5-4b1c-b613-4d641488d8da.jpg",
       "PackagePath": "staticwebassets\\images\\c4786e1f-d0f5-4b1c-b613-4d641488d8da.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\c727e148-631d-44e9-bccf-9911f28fc727.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\c727e148-631d-44e9-bccf-9911f28fc727.jpg",
       "PackagePath": "staticwebassets\\images\\c727e148-631d-44e9-bccf-9911f28fc727.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\cb4ec67a-a9f0-4471-bc0e-35467abc428d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\cb4ec67a-a9f0-4471-bc0e-35467abc428d.jpg",
       "PackagePath": "staticwebassets\\images\\cb4ec67a-a9f0-4471-bc0e-35467abc428d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\ce6c23b0-f5d0-4442-b094-657a3723332a.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\ce6c23b0-f5d0-4442-b094-657a3723332a.jpg",
       "PackagePath": "staticwebassets\\images\\ce6c23b0-f5d0-4442-b094-657a3723332a.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\cee62195-a570-4a21-80b1-ba216712c15c.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\cee62195-a570-4a21-80b1-ba216712c15c.jpg",
       "PackagePath": "staticwebassets\\images\\cee62195-a570-4a21-80b1-ba216712c15c.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\d5af2fbf-55d0-4907-96c0-6338d2555311.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\d5af2fbf-55d0-4907-96c0-6338d2555311.jpg",
       "PackagePath": "staticwebassets\\images\\d5af2fbf-55d0-4907-96c0-6338d2555311.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\d68788b6-0292-4ed6-a606-b078cea1bc49.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\d68788b6-0292-4ed6-a606-b078cea1bc49.jpg",
       "PackagePath": "staticwebassets\\images\\d68788b6-0292-4ed6-a606-b078cea1bc49.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\dab54ec7-7ec8-4e37-bd0c-06c5614f788d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\d9ca3e92-7a23-4b2b-a925-cf70d82dbb08.png",
+      "PackagePath": "staticwebassets\\images\\d9ca3e92-7a23-4b2b-a925-cf70d82dbb08.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\dab54ec7-7ec8-4e37-bd0c-06c5614f788d.jpg",
       "PackagePath": "staticwebassets\\images\\dab54ec7-7ec8-4e37-bd0c-06c5614f788d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\df03b874-41b1-419e-8b41-c1326ee3551c.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\df03b874-41b1-419e-8b41-c1326ee3551c.jpg",
       "PackagePath": "staticwebassets\\images\\df03b874-41b1-419e-8b41-c1326ee3551c.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\e019b89f-27c5-4311-9edf-c0387cc0f9c9.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\e019b89f-27c5-4311-9edf-c0387cc0f9c9.png",
       "PackagePath": "staticwebassets\\images\\e019b89f-27c5-4311-9edf-c0387cc0f9c9.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\e14116cd-6e78-4b0f-b786-55a8c92562b4.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\e14116cd-6e78-4b0f-b786-55a8c92562b4.jpg",
       "PackagePath": "staticwebassets\\images\\e14116cd-6e78-4b0f-b786-55a8c92562b4.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\e1fdc76d-6c45-4039-8f97-8960c1cab536.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\e1fdc76d-6c45-4039-8f97-8960c1cab536.jpg",
       "PackagePath": "staticwebassets\\images\\e1fdc76d-6c45-4039-8f97-8960c1cab536.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\e2fb9f9f-b00d-4e71-89df-47d85b9a42ae.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\e2fb9f9f-b00d-4e71-89df-47d85b9a42ae.jpg",
       "PackagePath": "staticwebassets\\images\\e2fb9f9f-b00d-4e71-89df-47d85b9a42ae.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\e350b21f-686c-45a4-bb27-592035ffd3a9.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\e350b21f-686c-45a4-bb27-592035ffd3a9.jpg",
       "PackagePath": "staticwebassets\\images\\e350b21f-686c-45a4-bb27-592035ffd3a9.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\eac0e79a-5798-4f2e-8caf-00847a2ab63d.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\eac0e79a-5798-4f2e-8caf-00847a2ab63d.jpg",
       "PackagePath": "staticwebassets\\images\\eac0e79a-5798-4f2e-8caf-00847a2ab63d.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\eaef771e-54dd-4e3a-bb33-e250e1df3247.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\eaef771e-54dd-4e3a-bb33-e250e1df3247.png",
       "PackagePath": "staticwebassets\\images\\eaef771e-54dd-4e3a-bb33-e250e1df3247.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\eb5bfb87-355e-4881-9ad9-07e92f76d8e2.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\eb5bfb87-355e-4881-9ad9-07e92f76d8e2.png",
       "PackagePath": "staticwebassets\\images\\eb5bfb87-355e-4881-9ad9-07e92f76d8e2.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\ee32c2af-15b3-46f4-80dd-4b773b173ab6.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\ee32c2af-15b3-46f4-80dd-4b773b173ab6.jpg",
       "PackagePath": "staticwebassets\\images\\ee32c2af-15b3-46f4-80dd-4b773b173ab6.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\f19f319f-c37e-4ec0-93c5-517c7ea2c03c.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\eeb0b583-f146-4a7c-bd4b-b8ce59cc2fee.png",
+      "PackagePath": "staticwebassets\\images\\eeb0b583-f146-4a7c-bd4b-b8ce59cc2fee.png"
+    },
+    {
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\f19f319f-c37e-4ec0-93c5-517c7ea2c03c.jpg",
       "PackagePath": "staticwebassets\\images\\f19f319f-c37e-4ec0-93c5-517c7ea2c03c.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\f1d8ea8c-b1bb-4b28-b712-14dd0e2d692a.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\f1d8ea8c-b1bb-4b28-b712-14dd0e2d692a.jpg",
       "PackagePath": "staticwebassets\\images\\f1d8ea8c-b1bb-4b28-b712-14dd0e2d692a.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\f30bb9f7-adc4-4dba-a520-850b0cd90436.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\f30bb9f7-adc4-4dba-a520-850b0cd90436.jpg",
       "PackagePath": "staticwebassets\\images\\f30bb9f7-adc4-4dba-a520-850b0cd90436.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\f6c298da-5621-4db6-bb8c-af9e04dd287e.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\f6c298da-5621-4db6-bb8c-af9e04dd287e.png",
       "PackagePath": "staticwebassets\\images\\f6c298da-5621-4db6-bb8c-af9e04dd287e.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\f7bf6c62-e0b3-4bd8-aa95-6b80f42114bd.png",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\f7bf6c62-e0b3-4bd8-aa95-6b80f42114bd.png",
       "PackagePath": "staticwebassets\\images\\f7bf6c62-e0b3-4bd8-aa95-6b80f42114bd.png"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\fc297e39-ce6a-4bc0-9f91-6515a4c7a0d9.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\fc297e39-ce6a-4bc0-9f91-6515a4c7a0d9.jpg",
       "PackagePath": "staticwebassets\\images\\fc297e39-ce6a-4bc0-9f91-6515a4c7a0d9.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\fda279df-d08d-40d8-b904-b382087a02a4.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\fda279df-d08d-40d8-b904-b382087a02a4.jpg",
       "PackagePath": "staticwebassets\\images\\fda279df-d08d-40d8-b904-b382087a02a4.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\fe1c73be-3193-4648-96c2-56a7d79a7691.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\fe1c73be-3193-4648-96c2-56a7d79a7691.jpg",
       "PackagePath": "staticwebassets\\images\\fe1c73be-3193-4648-96c2-56a7d79a7691.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\ffca2ff8-ae2d-4135-b490-3ce0af10f37e.jpg",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\images\\ffca2ff8-ae2d-4135-b490-3ce0af10f37e.jpg",
       "PackagePath": "staticwebassets\\images\\ffca2ff8-ae2d-4135-b490-3ce0af10f37e.jpg"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\js\\site.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Kaufland\\Programming\\ReactProject\\TestReactProject\\ReactJs-Final-Project\\webapi\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

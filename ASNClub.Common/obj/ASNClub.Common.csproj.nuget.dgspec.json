@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj": {}
+    "C:\\Kaufland\\Programming\\ReactProject\\CommitReact\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj": {
+    "C:\\Kaufland\\Programming\\ReactProject\\CommitReact\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj",
+        "projectUniqueName": "C:\\Kaufland\\Programming\\ReactProject\\CommitReact\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj",
         "projectName": "ASNClub.Common",
-        "projectPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj",
-        "packagesPath": "C:\\Users\\Doroti\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doroti\\Desktop\\Atanas\\React\\ReactFinalProject\\ReactJs-Final-Project\\ASNClub.Common\\obj\\",
+        "projectPath": "C:\\Kaufland\\Programming\\ReactProject\\CommitReact\\ReactJs-Final-Project\\ASNClub.Common\\ASNClub.Common.csproj",
+        "packagesPath": "C:\\Users\\AtanasooW\\.nuget\\packages\\",
+        "outputPath": "C:\\Kaufland\\Programming\\ReactProject\\CommitReact\\ReactJs-Final-Project\\ASNClub.Common\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Doroti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AtanasooW\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

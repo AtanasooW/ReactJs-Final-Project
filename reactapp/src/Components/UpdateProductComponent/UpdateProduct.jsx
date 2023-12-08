@@ -36,6 +36,7 @@ const formInitialState = {
     const[checkedDiscount, setChekedDiscount] = useState(false);
     const[checkedColor, setCheckedColor] = useState(false);
     const[startDateHelper, setStartDateHelper] = useState("");
+    const[endDateHelper, setEndDateHelper] = useState("");
     const [file, setFile] = useState([]);//fileInitialState
     const[images,setImages] = useState([]);
     const[formValues,setFormValues] = useState(formInitialState)
@@ -57,13 +58,19 @@ const formInitialState = {
       .then(d => {setFormValues(d);
         setFile(d.imgUrls);
         onLoadColor(d.colorId);
-        onLoadDiscount(d.discount.isDiscount, d.discount.startDate);
+        onLoadDiscount(d.discount.isDiscount, d.discount.startDate,d.discount.endDate);
       })
     }, []);
 
     const changeHandler = (e) => {
         let value = e.target.value;
-        console.log(value);
+        console.log(e.target.name);
+        if(e.target.name === "discount.endDate"){
+          setEndDateHelper(e.target.value);
+        }
+        if(e.target.name === "discount.startDate"){
+          setStartDateHelper(e.target.value);
+        }
         if(e.target.name.startsWith("discount")){
           setFormValues(state => ({
             ...state,
@@ -78,13 +85,16 @@ const formInitialState = {
           }));
         }
     };
-    function onLoadDiscount(isDiscount, startDate) {
+    function onLoadDiscount(isDiscount, startDate,endDate) {
       if(isDiscount){
-        const tempObject = new Date(startDate);
-        console.log(tempObject);
-        const isoDateString = tempObject.toISOString().split('T')[0];
-        console.log(isoDateString);
-        setStartDateHelper(isoDateString);
+        const tempStartObject = new Date(startDate);
+        const tempEndObject = new Date(endDate);
+
+        const isoStartDateString = tempStartObject.toISOString().split('T')[0];
+        const isoEndDateString = tempEndObject.toISOString().split('T')[0];
+
+        setStartDateHelper(isoStartDateString);
+        setEndDateHelper(isoEndDateString)
         document.getElementById("discountCheckbox").click();
         DiscountChange();
       }
@@ -266,7 +276,7 @@ const formInitialState = {
                   </div>
                   <div>
                     <label htmlFor="discount.endDate">Discount End Date:</label><br/>
-                    <input type="date" id="discount.endDate" name="discount.endDate" value={Date(formValues.discount.endDate)} onChange={changeHandler}/><br/>
+                    <input type="date" id="discount.endDate" name="discount.endDate" value={endDateHelper} onChange={changeHandler}/><br/>
                   </div>
                   <div>
                 <label htmlFor="DiscountId">Discounts</label><br/>

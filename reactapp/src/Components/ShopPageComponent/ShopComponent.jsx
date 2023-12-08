@@ -37,10 +37,10 @@ export default function ShopComponent(){
     useEffect(() => {
         if (data.products && data.products.length > 0) {
             const prices = data.products.map(product => product.price);
-            if(maxPrice.toString() === ""){
-                return
+            if(maxPrice === 0){
+                setMaxPrice(Math.max(...prices));
+                
             }
-            setMaxPrice(Math.max(...prices));
           }
     }, [data]);  
 
@@ -59,6 +59,7 @@ export default function ShopComponent(){
     const changeHandler = (e) => {
         let value = e.target.value;
         console.log(value);
+
         if(e.target.name === "maxPrice"){
             setMaxPrice(e.target.value)
         }

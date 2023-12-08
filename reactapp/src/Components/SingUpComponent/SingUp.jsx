@@ -43,7 +43,7 @@ export default function SingUp(){
           }
         } else {
           console.log("Registration successful");
-          navigate("/singin");
+          navigate("/singIn");
         }
       } catch (error) {
         if(error.name === "")

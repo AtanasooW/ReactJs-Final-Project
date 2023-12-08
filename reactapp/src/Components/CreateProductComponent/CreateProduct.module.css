@@ -7,6 +7,7 @@ input[type="file"] {
     display: none;
 }
 .container{
+    align-self: center;
     background-color: #e2ae82;
     padding: 2.5em 3em;
     margin: 2em;
@@ -93,7 +94,6 @@ input[type="file"] {
     background-color: #cf2c44;
     color: white;
     padding: 1em 1.25em;
-    font-size: 1em;
     font-weight: 700;
     border: #283E40 solid 1px;
     border-radius: 5px;;

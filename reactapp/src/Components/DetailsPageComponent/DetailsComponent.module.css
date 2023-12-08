@@ -72,7 +72,7 @@
 }
 .colorContainer select{
     max-width: 25%;
-    padding: 0.5em 1em;
+    padding: 0.25em 0.5em;
     background-color: #d7455b;
     border: black 2px solid;
     border-radius: 15px;
@@ -147,13 +147,18 @@
     gap: 2em;
 }
 .btnsContainer a{
+    width: 100%;
+    align-self: center;
+}
+.btnsContainer button{
+    width: 100%;
+
     padding: 0.5em;
     font-size: 1.5em;
     font-weight: 700;
     border: black 3px solid;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
 }
 .addToCardBtn{
     background-color: #305282;
@@ -162,7 +167,6 @@
 .addToCardBtn:hover{
     background-color: #5486cc;
     transform: scale(1.05);
-    text-decoration: none;
 }
 .buyNowBtn{
     background-color: #a9bfdf;
@@ -171,8 +175,6 @@
 .buyNowBtn:hover{
     background-color: #d0e1fc;
     transform: scale(1.05);
-    text-decoration: none;
-
 }
 .deleteProduct{
     background-color: #cf2c44;
@@ -191,19 +193,4 @@
 .ratingLabel{
     margin-top: 1em;
     font-size: 700;
-}
-@media (width <= 600px) { 
-
-  .container{
-    margin: 1em;
-  }
-  .imgsContainer{
-    flex: 1;
-  }
-  .infoContainer{
-    flex: 1;
-  }
-  .checkOutCard{
-    flex: 1;
-  }
 }

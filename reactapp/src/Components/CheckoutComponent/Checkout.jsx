@@ -1,6 +1,5 @@
 
 import { useNavigate, useParams } from "react-router-dom";
-import styles from "./Checkout.module.css"
 import { useEffect, useState } from "react";
 import ApiUrl from "../../Common/Url";
 
@@ -68,23 +67,25 @@ export default function Checkout(){
 
     return(
             <div className="container wrapper">
-    <div className="row cart-head">
-        <div className="container">
-            <div className="row">
-                <p></p>
-            </div>
-            <div className="row">
-                <p h3>Finish order</p>
-            </div>
-        </div>
-    </div>
-    <div className="row cart-body">
+                <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"/>
 
-        <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-push-6 col-sm-push-6">
-            <div className="panel panel-info" style={{paddingBottom: "5em"}}>
-                <div className="panel-heading">
-                    Review Order <div className="pull-right"><small><a asp-controller="ShoppingCart" asp-action="MyShoppingCart" className="afix-1">Edit Cart</a></small></div>
+                <div className="row cart-head">
+                    <div className="container">
+                        <div className="row">
+                            <p></p>
+                        </div>
+                        <div className="row">
+                            <p h3>Finish order</p>
+                        </div>
+                    </div>
                 </div>
+                <div className="row cart-body">
+
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-md-push-6 col-sm-push-6">
+                        <div className="panel panel-info" style={{paddingBottom: "8em"}}>
+                            <div className="panel-heading">
+                                Review Order <div className="pull-right"><small><a asp-controller="ShoppingCart" asp-action="MyShoppingCart" className="afix-1">Edit Cart</a></small></div>
+                            </div>
 
             {formValues && (
             <>
@@ -95,7 +96,7 @@ export default function Checkout(){
                                 <img class="img-responsive" src={formValues.imgUrl} />
                             </div>
                             <div class="col-sm-6 col-xs-6">
-                                <h2 class="col-xs-12">{formValues.type} For {formValues.make} {formValues.model}</h2>
+                                <h3 class="col-xs-12">{formValues.type} For {formValues.make} {formValues.model}</h3>
                                 <div class="col-xs-12"><h6>Quantity:<span class="quantity-input h6"> {params.quantity}</span></h6></div>
                                 {formValues.color !== null ?
                                     (<div class="col-xs-12"><small>Color:<span>{formValues.color}</span></small></div>) : (null)

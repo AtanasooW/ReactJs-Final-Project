@@ -43,6 +43,7 @@ export default function CreateProduct(){
   else{
     navigate("/")
   }
+  
   useEffect(() => {
         fetch(`${ApiUrl}/api/product/Create`)
         .then(responese => responese.json())
@@ -51,7 +52,8 @@ export default function CreateProduct(){
     const changeHandler = (e) => {
       let value = e.target.value;
       console.log(value);
-      if(e.target.name.startsWith("discount")){
+      console.log(e.target.name);
+      if(e.target.name.startsWith("discount") && e.target.name !== "discountId"){
         setFormValues(state => ({
           ...state,
           discount: {...state.discount,

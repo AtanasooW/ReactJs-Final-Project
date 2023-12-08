@@ -52,10 +52,10 @@ export default function DetailsComponent(){
         console.log(e.target.value)
         const response = await fetch(`${ApiUrl}/api/Shop/Rating?id=${data.id}&ratingValue=${e.target.value}&userId=${check.id}`);
           if(response.status === 200){
-            window.location.reload(false);
+            navigate(`/shop/${data.id}`);
           }
           else{
-            alert("Error ocures while rating")
+            console.error("Error ocures while rating")
           }
     }
     function decreaseQuantity(){
@@ -102,12 +102,12 @@ export default function DetailsComponent(){
                         <h1 className={styles.productName}>{data.type} for {data.make} {data.model}</h1>
                         <div className={styles.ratingContainer}>
                             <div>
-                                {Array.from({ length: Math.floor(data.rating) }).map((_, index) => (
-                                    <i key={index} class="fa-solid fa-star fa-xl" style={{color: "#fbff00"}}></i>
+                            {Array.from({ length: Math.floor(data.rating) }).map((_, index) => (
+                                    <i key={index} class="fa-solid fa-star fa-xl" style={{color: "#ffbf00"}}></i>
                                 ))}
-                                {data.rating % 1 !== 0 && <i class="fa-solid fa-star-half-stroke fa-xl" style={{color: "#fbff00"}}></i>}
+                                {data.rating % 1 !== 0 && <i class="fa-solid fa-star-half-stroke fa-xl" style={{color: "#ffbf00"}}></i>}
                                 {Array.from({ length: 5 - Math.ceil(data.rating) }).map((_, index) => (
-                                    <i key={index} class="fa-regular fa-star fa-xl" style={{color: "#fbff00"}}></i>
+                                    <i key={index} class="fa-regular fa-star fa-xl" style={{color: "#ffbf00"}}></i>
                                 ))}
                                 <h4 className={styles.ratingValue}>{data.rating}</h4>
                             </div>
@@ -158,8 +158,8 @@ export default function DetailsComponent(){
                             </div>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <a className={styles.addToCardBtn} href={`/checkout/${params.id}/${quantity}`}>Add to card</a>
-                            <a className={styles.buyNowBtn} href={`/checkout/${params.id}/${quantity}`}>Buy now</a>
+                            <a href={`/checkout/${params.id}/${quantity}`}><button className={styles.addToCardBtn}>Add to card</button></a>
+                            <a href={`/checkout/${params.id}/${quantity}`}><button className={styles.buyNowBtn}>Buy now</button></a>
                             {userRole === "Moderator" ? (
                               <button className={styles.deleteProduct} onClick={deleteProduct}>Delete</button>
                               ) : (null)}

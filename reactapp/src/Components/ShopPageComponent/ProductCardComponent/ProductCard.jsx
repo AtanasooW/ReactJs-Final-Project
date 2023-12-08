@@ -13,7 +13,7 @@ export default function ProductCard(product){
       <Card.Body>
         <Card.Title>{product.type} for {product.make} {product.model}</Card.Title>
         <Card.Text>
-          {product.rating !== null && (
+        {product.rating !== null && (
              <div className={styles.stars}>
               <h6>Rating:</h6>
              {Array.from({ length: Math.floor(product.rating) }).map((_, index) => (
@@ -25,8 +25,6 @@ export default function ProductCard(product){
              ))}
          </div>
           )}
-         
-          
         </Card.Text>
         <Card.Text className={styles.price}>
         {product.isDiscount === true ? (
@@ -38,7 +36,7 @@ export default function ProductCard(product){
         <div className={styles.buttonContainer}>
           
         <a href={`/shop/${product.id}`}><Button className={styles.redButtonForDetails}>View Details</Button></a>
-        <a href={`/shop/${product.id}`}><Button className={styles.blueButton}>Buy now</Button></a>
+        <Button className={styles.blueButton}>Buy now</Button>
         </div>
       </Card.Body>
     </Card>
