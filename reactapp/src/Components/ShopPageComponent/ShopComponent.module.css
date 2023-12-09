@@ -74,3 +74,22 @@
     width: 70%;
 }
 
+
+@media (width <= 600px) { 
+    .mainContainer{
+        flex: 6;
+    }
+   .optionsContainer{
+    flex:3;
+   }
+   .productsContainer{
+    flex-direction: column;
+    align-items: center;
+   }
+   .productsPerPage{
+    display: none;
+   }
+   .sortingContainer{
+    width: 100%;
+   }
+}

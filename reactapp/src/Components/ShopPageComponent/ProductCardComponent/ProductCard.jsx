@@ -37,7 +37,7 @@ export default function ProductCard(product){
         </Card.Text>
         <div className={styles.buttonContainer}>
           
-        <a href={`/shop/${product.id}`}><Button className={styles.redButton}>View Details</Button></a>
+        <a href={`/shop/${product.id}`}><Button className={styles.redButtonForDetails}>View Details</Button></a>
         <a href={`/shop/${product.id}`}><Button className={styles.blueButton}>Buy now</Button></a>
         </div>
       </Card.Body>

@@ -13,10 +13,11 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.redButton{
+.redButtonForDetails{
     padding: 0.5em 1em;
+    font-size: 1em;
     background-color: #cf2c44;
-    border: none;
+    border: white solid 1px;
     border-radius: 5px;
 }
 .redButton:hover{

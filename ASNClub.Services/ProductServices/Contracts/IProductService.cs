@@ -18,6 +18,7 @@ namespace ASNClub.Services.ProductServices.Contracts
         public Task EditProductAsync(ProductFormDTO productDTO);
         public Task<ProductDetailsDTO?> GetProductDetailsByIdAsync(int productId);
         public Task<AllProductDTO> GetProductForCheckout(int id);
+        public Task PlaceOrderAsync(OrderProductDTO model);
 
         public Task AddRatingAsync(int id, int ratingValue, string userId);
 

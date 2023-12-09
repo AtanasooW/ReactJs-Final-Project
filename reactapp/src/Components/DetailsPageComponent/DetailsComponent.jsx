@@ -158,8 +158,8 @@ export default function DetailsComponent(){
                             </div>
                         </div>
                         <div className={styles.btnsContainer}>
-                            <button className={styles.addToCardBtn}>Add to card</button>
-                            <button className={styles.buyNowBtn}>Buy now</button>
+                            <a className={styles.addToCardBtn} href={`/checkout/${params.id}/${quantity}`}>Add to card</a>
+                            <a className={styles.buyNowBtn} href={`/checkout/${params.id}/${quantity}`}>Buy now</a>
                             {userRole === "Moderator" ? (
                               <button className={styles.deleteProduct} onClick={deleteProduct}>Delete</button>
                               ) : (null)}

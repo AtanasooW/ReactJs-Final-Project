@@ -1,4 +1,6 @@
 ﻿using ASNClub.Data;
+using ASNClub.Data.Models.AddressModels;
+using ASNClub.Data.Models.Orders;
 using ASNClub.Data.Models.Product;
 using ASNClub.DTOs.Color;
 using ASNClub.DTOs.Discount;
@@ -353,7 +355,7 @@ namespace ASNClub.Services.ProductServices
             product.Colors = colors;
             return product;
         }
-
+        //---------------Checkout
         public async Task<AllProductDTO> GetProductForCheckout(int id)
         {
             AllProductDTO productDTO = await dbContext.Products.Where(x => x.Id == id)
@@ -371,6 +373,39 @@ namespace ASNClub.Services.ProductServices
 
                 }).FirstOrDefaultAsync();
             return productDTO;
+        }
+
+        public async Task PlaceOrderAsync(OrderProductDTO model)
+        {
+
+            Order order = new Order();
+
+            var address = new Address()
+            {
+                CountryId = 1,
+                City = model.City,
+                Street1 = model.Street1,
+                Street2 = model.Street2,
+                StreetNumber = model.StreetNumber,
+                PostalCode = model.PostalCode,
+                IsDefault = false
+            };
+            await dbContext.Addresses.AddAsync(address);
+            order.ShippingAdressId = address.Id;
+            order.OrderDate = DateTime.Now;
+            order.OrderStatusId = 1;
+            await dbContext.Orders.AddAsync(order);
+            await dbContext.SaveChangesAsync();
+
+            OrderItem item = new OrderItem()
+            {
+                OrderId = order.Id,
+                ProductId = (int)model.ProductId,
+                Quantity = (int)model.Quantity,
+            };
+            order.Items.Add(item);
+            await dbContext.SaveChangesAsync();
+            return;
         }
         //-------------Rating Logic
         public async Task AddRatingAsync(int id, int ratingValue, string userId)//, string? userId

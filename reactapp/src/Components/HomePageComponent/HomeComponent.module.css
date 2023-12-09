@@ -61,6 +61,7 @@
     margin: 0 1.5em;
     padding: 1em 2em;
     background-color: #cf2c44;
+    color: white;
     border: black 2px solid;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -108,4 +109,26 @@
 .categories ul li a:hover{
     text-decoration: underline;
     color: #Da957E;
+}
+@media (width <= 600px) { 
+    *{
+        font-size: 14px;
+    }
+    
+    .backgroundImg{
+        max-width: 100%;
+    }
+    .lowPricesContainer{
+        display: none;
+    }
+    .categories{
+        display: none;
+    }
+    .onTopText p{
+        font-size: 0.7em;
+    }
+    .redButton{
+        color: white;
+        padding: 0.75em 1.25em;
+    }
 }

@@ -24,7 +24,7 @@ export default function App() {
                     <Route path="/updateProduct/:id" element={<UpdateProduct/>}/>
                     <Route path="/singup" element={<SingUp/>}/>
                     <Route path="/singin" element={<SingIn/>}/>
-                    <Route path="/checkout/:id" element={<Checkout/>}/>
+                    <Route path="/checkout/:id/:quantity" element={<Checkout />} />
                 </Routes>
             </main>
             <Footer/>

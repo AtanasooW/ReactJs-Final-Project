@@ -98,5 +98,19 @@ namespace webapi.Controllers
                 return BadRequest("Error ocures");
             }
         }
+        [HttpPost("PlaceOrder")]
+        public async Task<IActionResult> CheckoutWitoutProfile([FromBody]OrderProductDTO model)
+        {
+            try
+            {
+                await productService.PlaceOrderAsync(model);
+                return Ok();
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest("Error ocures while ordering: " + e.Message);
+            }
+        }
     }
 }

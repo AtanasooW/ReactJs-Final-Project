@@ -63,6 +63,7 @@
     border-radius: 5px;
     background-color: #cf2c44;
     font-weight: 400;
+    color: white;
 }
 .userContainer{
     display: flex;
@@ -81,4 +82,23 @@
 }
 .shoppingCartContainer h4{
     padding-left: 0.25em;
+}
+@media (width <= 600px) { 
+
+    .logoContainer a h2{
+        font-size: 16px;
+    }
+    .logoContainer a img{
+        width: 2.5em;
+        height: 2.5em;
+    }
+    .navsContainer ul{
+        gap: 1.5em;
+    }
+    .shoppingCartContainer{
+        display: none;
+    }
+    .logoutBtn{
+        padding: 0.5em 0.75em;
+    }
 }
